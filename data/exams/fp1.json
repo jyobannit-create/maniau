@@ -1,0 +1,28 @@
+{
+  "slug": "fp1",
+  "name": "FP技能検定 1級 実技試験(日本FP協会)",
+  "shortName": "FP1級実技",
+  "category": "会計・金融",
+  "organizer": "NPO法人 日本FP協会",
+  "officialUrl": "https://www.jafp.or.jp/exam/outline/1fp/",
+  "fee": "20,000円(非課税)",
+  "examType": "fixed",
+  "description": "FP資格の最高峰・1級FP技能士の実技試験(資産設計提案業務)。日本FP協会の実技試験は年1回、9月のみの実施です。受検にはCFP®認定者・1級学科試験合格者などの受検資格が必要で、2級合格だけでは受検できません。年1回しかないため、申込を逃すと次のチャンスは1年後になります。",
+  "sessions": [
+    {
+      "label": "2026年度試験(9月実施)",
+      "examDate": "2026-09-13",
+      "examNote": "実技試験(資産設計提案業務)。受検資格の詳細は公式サイトで確認",
+      "applications": [
+        { "method": "インターネット申請", "start": "2026-07-16", "end": "2026-08-06" }
+      ],
+      "resultDate": "2026-11-12"
+    }
+  ],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.jafp.or.jp/exam/outline/1fp/", "note": "公式(日本FP協会 1級試験要綱)" },
+    { "url": "https://www.jafp.or.jp/exam/schedule/", "note": "公式(日本FP協会 試験日程)" }
+  ],
+  "lastVerified": "2026-07-16"
+}

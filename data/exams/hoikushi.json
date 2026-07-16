@@ -1,0 +1,27 @@
+{
+  "slug": "hoikushi",
+  "name": "保育士試験(後期)",
+  "shortName": "保育士(後期)",
+  "category": "福祉・教育",
+  "organizer": "一般社団法人 全国保育士養成協議会",
+  "officialUrl": "https://www.hoyokyo.or.jp/exam/",
+  "fee": null,
+  "examType": "fixed",
+  "description": "国家資格・保育士になるための試験。年2回(前期・後期)実施され、後期試験の筆記は10月、実技は12月です。筆記試験は科目合格制で、合格した科目は3年間(条件により最長5年)有効。申込期間は約3週間と短く、締切を逃すと半年待ちになるため注意が必要です。",
+  "sessions": [
+    {
+      "label": "令和8年 後期試験",
+      "examDate": "2026-10-24",
+      "examNote": "筆記試験: 10/24(土)・25(日) / 実技試験: 12/13(日)",
+      "applications": [
+        { "method": "受験申請(オンライン・郵送)", "start": "2026-07-03", "end": "2026-07-23", "endTime": "17:00", "note": "郵送は当日消印有効" },
+        { "method": "前期実技試験不合格者の申請", "start": "2026-07-29", "end": "2026-08-10", "endTime": "17:00", "note": "郵送は当日消印有効" }
+      ]
+    }
+  ],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.hoyokyo.or.jp/exam/guidance/reiwa-8-2nd.html", "note": "公式(全国保育士養成協議会 令和8年後期受験案内)" }
+  ],
+  "lastVerified": "2026-07-16"
+}
