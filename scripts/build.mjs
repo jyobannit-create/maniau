@@ -240,6 +240,7 @@ ${body}
 <footer class="site"><div class="wrap">
   <div><a href="${rel}/">${esc(SITE_NAME)}</a> — 資格試験の申込締切トラッカー</div>
   <p class="note">掲載情報は各実施団体の公表内容をもとに自動巡回で更新していますが、申込前に必ず公式サイトで最新情報をご確認ください。</p>
+  <p class="note"><a href="${rel}/about/">サイトについて・運営者情報</a> ・ <a href="${rel}/privacy/">プライバシーポリシー</a></p>
   <p class="note">最終更新: ${fmtDate(TODAY)}</p>
 </div></footer>
 <script>${COUNTDOWN_JS}</script>
@@ -447,10 +448,64 @@ function renderExam(exam) {
   });
 }
 
+// ---------- 固定ページ ----------
+
+const CONTACT_EMAIL_OBFUSCATED = "jyobanni.t[at]gmail.com"; // スパム対策で[at]表記
+
+const STATIC_PAGES = [
+  {
+    slug: "about",
+    title: "サイトについて・運営者情報",
+    description: "マニアウは資格試験の申込締切・試験日を毎週自動巡回で更新する締切トラッカーです。運営者情報と情報の集め方について。",
+    body: `
+<h1>サイトについて・運営者情報</h1>
+<h2>マニアウとは</h2>
+<p class="desc">「受けようと思ったら申込締切が過ぎていた」——資格試験でいちばん悔しい失敗をなくすためのサイトです。主要資格の申込期間・試験日を締切が近い順に一覧化し、いま申し込める試験・まもなく受付が始まる試験がひと目でわかるようにしています。</p>
+<h2>情報の集め方と正確性</h2>
+<p class="desc">掲載データは各試験の実施団体(公式サイト)の公表内容を一次情報とし、週1回の定期巡回で更新しています。各資格ページには情報源のリンクと最終確認日を明記しています。ただし日程・受験料等は変更される場合があるため、申込の際は必ず実施団体の公式サイトで最新情報をご確認ください。</p>
+<h2>運営者情報</h2>
+<div class="tablewrap"><table class="info-table">
+<tr><th>サイト名</th><td>マニアウ</td></tr>
+<tr><th>運営者</th><td>マニアウ運営事務局(個人運営)</td></tr>
+<tr><th>お問い合わせ</th><td>${CONTACT_EMAIL_OBFUSCATED}(お手数ですが [at] を @ に置き換えてください)</td></tr>
+<tr><th>開設</th><td>2026年7月</td></tr>
+</table></div>
+<p class="desc">掲載内容の誤りにお気づきの場合は、上記までご連絡いただけると幸いです。確認のうえ速やかに修正します。</p>`,
+  },
+  {
+    slug: "privacy",
+    title: "プライバシーポリシー",
+    description: "マニアウのプライバシーポリシー。広告(アフィリエイトプログラム)の利用、免責事項、著作権について。",
+    body: `
+<h1>プライバシーポリシー</h1>
+<h2>広告について</h2>
+<p class="desc">当サイトは、アフィリエイトプログラム(A8.net、もしもアフィリエイト、afb等)に参加し、記事内に広告(PR)リンクを掲載する場合があります。広告リンクを経由して商品・サービスの申込が行われた場合、提携先から当サイトに報酬が支払われることがあります。掲載価格・キャンペーン等の最新条件は、必ずリンク先の公式ページでご確認ください。</p>
+<h2>アクセス解析について</h2>
+<p class="desc">当サイトでは現在、Cookieを利用したアクセス解析ツールは使用していません。導入する場合は本ポリシーを更新のうえ告知します。</p>
+<h2>免責事項</h2>
+<p class="desc">掲載情報は各実施団体の公表内容をもとに更新していますが、その正確性・完全性を保証するものではありません。試験の申込にあたっては必ず実施団体の公式サイトで最新情報をご確認ください。当サイトの利用により生じたいかなる損害についても、運営者は責任を負いかねます。</p>
+<h2>著作権</h2>
+<p class="desc">当サイトのコンテンツの著作権は運営者に帰属します。引用の際は出典(サイト名とURL)を明記してください。</p>
+<h2>お問い合わせ</h2>
+<p class="desc">本ポリシーに関するお問い合わせは<a href="../about/">運営者情報</a>に記載のアドレスまでお願いします。</p>
+<p class="desc">制定日: 2026年7月16日</p>`,
+  },
+];
+
+function renderStaticPage(p) {
+  return page({
+    title: `${p.title} | ${SITE_NAME}`,
+    description: p.description,
+    canonicalPath: `/${p.slug}/`,
+    body: `<div class="wrap"><nav class="crumb"><a href="../">${esc(SITE_NAME)}</a> › ${esc(p.title)}</nav><article class="exam">${p.body}</article></div>`,
+    depth: 1,
+  });
+}
+
 // ---------- サイトマップ等 ----------
 
 function renderSitemap(exams) {
-  const urls = ["/", ...exams.map((e) => `/exams/${e.slug}/`)];
+  const urls = ["/", ...STATIC_PAGES.map((p) => `/${p.slug}/`), ...exams.map((e) => `/exams/${e.slug}/`)];
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `  <url><loc>${BASE_URL}${u}</loc><lastmod>${fmtIso(TODAY)}</lastmod></url>`).join("\n")}
@@ -471,6 +526,11 @@ for (const exam of exams) {
   const dir = path.join(OUT_DIR, "exams", exam.slug);
   await mkdir(dir, { recursive: true });
   await writeFile(path.join(dir, "index.html"), renderExam(exam));
+}
+for (const p of STATIC_PAGES) {
+  const dir = path.join(OUT_DIR, p.slug);
+  await mkdir(dir, { recursive: true });
+  await writeFile(path.join(dir, "index.html"), renderStaticPage(p));
 }
 await writeFile(path.join(OUT_DIR, "sitemap.xml"), renderSitemap(exams));
 await writeFile(path.join(OUT_DIR, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${BASE_URL}/sitemap.xml\n`);
