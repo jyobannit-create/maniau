@@ -18,28 +18,29 @@
 
 人間の作業は「月1回、reports/ を眺めて異常がないか確認する」だけ。
 
-## セットアップ(1回だけ)
+## セットアップ(1回だけ・設定済み 2026-07-16)
 
-### 週次更新のcron登録
+### 週次更新のLaunchAgent登録
 
-```bash
-crontab -e
-```
+macOSではcronではなくlaunchdを使う(実行時刻にスリープしていても、復帰時に実行される)。
 
-以下を追加(毎週月曜 7:00):
-
-```cron
-0 7 * * 1 export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"; cd $HOME/dev/personal/maniau && claude -p "/update-exams" --permission-mode acceptEdits >> reports/cron.log 2>&1
-```
-
-- Macがスリープしていると実行されない。確実性を上げるなら `pmset repeat wakeorpoweron M 06:55:00` で自動起床を設定するか、Claude Code の /schedule(クラウド実行)への移行を検討
-- `--permission-mode acceptEdits` はこのリポジトリ内の編集を自動承認する。push は .claude/settings.json の許可リストに依存
-
-### 動作確認(手動実行)
+`~/Library/LaunchAgents/com.maniau.update-exams.plist` に定義済み:
+- スケジュール: 毎週月曜 7:00
+- 実行内容: `claude -p "/update-exams" --permission-mode acceptEdits`(ログは reports/cron.log)
 
 ```bash
-cd ~/dev/personal/maniau && claude -p "/update-exams" --permission-mode acceptEdits
+# 登録(初回のみ)
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.maniau.update-exams.plist
+# 登録確認
+launchctl list | grep maniau
+# 手動で今すぐ実行(動作確認)
+launchctl kickstart gui/$(id -u)/com.maniau.update-exams
+# 停止したいとき
+launchctl bootout gui/$(id -u)/com.maniau.update-exams
 ```
+
+- `--permission-mode acceptEdits` はこのリポジトリ内の編集を自動承認する。WebFetch/WebSearch/git push は .claude/settings.json の許可リストで無人実行できる
+- Macの電源が完全に切れている場合は実行されない(次回起動後の月曜7:00から再開)
 
 ## 障害時の初動
 
