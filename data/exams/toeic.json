@@ -1,0 +1,60 @@
+{
+  "slug": "toeic",
+  "name": "TOEIC Listening & Reading 公開テスト",
+  "shortName": "TOEIC L&R",
+  "category": "語学",
+  "organizer": "一般財団法人 国際ビジネスコミュニケーション協会(IIBC)",
+  "officialUrl": "https://www.iibc-global.org/toeic/test/lr/guide01/schedule.html",
+  "fee": "7,810円",
+  "examType": "fixed",
+  "description": "英語のリスニング・リーディング力を測る、就職・昇進の定番テスト。ほぼ毎月実施されていますが、申込締切は試験日の約1ヶ月半前と早く、「受けようと思ったら締切が過ぎていた」が起こりやすいテストの筆頭です。各回とも午前・午後の2回実施。",
+  "sessions": [
+    {
+      "label": "2026年9月5日(土)実施回",
+      "examDate": "2026-09-05",
+      "applications": [
+        { "method": "インターネット申込", "start": "2026-06-04", "end": "2026-07-29", "endTime": "15:00" }
+      ]
+    },
+    {
+      "label": "2026年9月27日(日)実施回",
+      "examDate": "2026-09-27",
+      "applications": [
+        { "method": "インターネット申込", "start": "2026-07-14", "end": "2026-08-14", "endTime": "15:00" }
+      ]
+    },
+    {
+      "label": "2026年10月25日(日)実施回",
+      "examDate": "2026-10-25",
+      "applications": [
+        { "method": "インターネット申込", "start": "2026-07-29", "end": "2026-09-10", "endTime": "15:00" }
+      ]
+    },
+    {
+      "label": "2026年11月15日(日)実施回",
+      "examDate": "2026-11-15",
+      "applications": [
+        { "method": "インターネット申込", "start": "2026-08-17", "end": "2026-10-05", "endTime": "15:00" }
+      ]
+    },
+    {
+      "label": "2026年12月6日(日)実施回",
+      "examDate": "2026-12-06",
+      "applications": [
+        { "method": "インターネット申込", "start": "2026-09-11", "end": "2026-10-26", "endTime": "15:00" }
+      ]
+    },
+    {
+      "label": "2026年12月19日(土)実施回",
+      "examDate": "2026-12-19",
+      "applications": [
+        { "method": "インターネット申込", "start": "2026-10-06", "end": "2026-11-11", "endTime": "15:00" }
+      ]
+    }
+  ],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.iibc-global.org/toeic/test/lr/guide01/schedule.html", "note": "公式(IIBC 年間テスト日程)" }
+  ],
+  "lastVerified": "2026-07-16"
+}

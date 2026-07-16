@@ -1,0 +1,29 @@
+{
+  "slug": "takken",
+  "name": "宅地建物取引士(宅建士)",
+  "shortName": "宅建",
+  "category": "不動産",
+  "organizer": "一般財団法人 不動産適正取引推進機構",
+  "officialUrl": "https://www.retio.or.jp/exam/",
+  "fee": "8,200円",
+  "examType": "fixed",
+  "description": "不動産取引の専門家であることを証明する国家資格。毎年20万人以上が受験する人気No.1クラスの資格で、不動産業界では事務所ごとに5人に1人以上の設置が義務付けられています。試験は年1回のみ。申込期間は7月の1ヶ月間だけと短いため、申込忘れが最も多い資格のひとつです。",
+  "sessions": [
+    {
+      "label": "2026年度(令和8年度)試験",
+      "examDate": "2026-10-18",
+      "examNote": "13:00〜15:00(登録講習修了者は13:10〜)",
+      "applications": [
+        { "method": "インターネット申込", "start": "2026-07-01", "end": "2026-07-31", "endTime": "23:59" },
+        { "method": "郵送申込", "start": "2026-07-01", "end": "2026-07-15", "note": "簡易書留のみ有効" }
+      ],
+      "resultDate": "2026-11-25"
+    }
+  ],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.retio.or.jp/exam/schedule/", "note": "公式(不動産適正取引推進機構)" },
+    { "url": "https://www.tac-school.co.jp/kouza_takken/takken_sk_schedule.html", "note": "TAC" }
+  ],
+  "lastVerified": "2026-07-16"
+}

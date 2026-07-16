@@ -1,0 +1,18 @@
+{
+  "slug": "kihon-joho",
+  "name": "基本情報技術者試験(FE)",
+  "shortName": "基本情報",
+  "category": "IT",
+  "organizer": "独立行政法人 情報処理推進機構(IPA)",
+  "officialUrl": "https://www.ipa.go.jp/shiken/index.html",
+  "fee": "7,500円",
+  "examType": "cbt",
+  "description": "ITエンジニアの登竜門と呼ばれる国家試験。CBT方式で通年実施されているため、思い立ったタイミングで受験日を予約できます。「いつでも受けられる」がゆえに先延ばしにしがちな試験の代表格。先に受験日を決めてから逆算して勉強するのが合格の近道です。",
+  "cbtNote": "全国のテストセンターで通年実施。希望する会場・日時を選んで申込。",
+  "sessions": [],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.ipa.go.jp/shiken/mousikomi/schedule.html", "note": "公式(IPA スケジュール)" }
+  ],
+  "lastVerified": "2026-07-16"
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "chintai",
+  "name": "賃貸不動産経営管理士",
+  "shortName": "賃管",
+  "category": "不動産",
+  "organizer": "一般社団法人 賃貸不動産経営管理士協議会",
+  "officialUrl": "https://www.chintaikanrishi.jp/",
+  "fee": null,
+  "examType": "fixed",
+  "description": "賃貸住宅管理のプロを証明する国家資格。賃貸住宅管理業者の業務管理者要件として2021年に国家資格化されて以降、受験者が急増しています。宅建とのダブル受験の定番。試験は年1回、11月に実施されます。",
+  "sessions": [
+    {
+      "label": "2026年度(令和8年度)試験",
+      "examDate": "2026-11-15",
+      "applications": [
+        { "method": "WEB申込", "start": "2026-08-03", "end": "2026-09-30", "endTime": "23:59" },
+        { "method": "郵送申込", "start": "2026-08-03", "end": "2026-09-24", "note": "当日消印有効" }
+      ]
+    }
+  ],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.chintaikanrishi.jp/", "note": "公式(賃貸不動産経営管理士協議会)" },
+    { "url": "https://studying.jp/chintaikanrishi/about-more/schedule.html", "note": "スタディング" }
+  ],
+  "lastVerified": "2026-07-16"
+}

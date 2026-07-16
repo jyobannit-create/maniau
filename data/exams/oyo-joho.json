@@ -1,0 +1,19 @@
+{
+  "slug": "oyo-joho",
+  "name": "応用情報技術者試験(AP)",
+  "shortName": "応用情報",
+  "category": "IT",
+  "organizer": "独立行政法人 情報処理推進機構(IPA)",
+  "officialUrl": "https://www.ipa.go.jp/shiken/2026/ap_koudo_sc_yotei.html",
+  "fee": "7,500円",
+  "examType": "tbd",
+  "description": "ITエンジニアとしてワンランク上の実力を証明する国家試験。2026年度から大きな制度変更があり、従来の春秋の筆記試験からCBT方式(テストセンター受験)に移行します。従来の春期区分は「前期試験」として2026年11月頃、秋期区分は「後期試験」として2027年2月頃の実施予定で、申込受付期間はまだ発表されていません。",
+  "tbdNote": "2026年度からCBT方式に移行。前期試験は2026年11月頃、後期試験は2027年2月頃に実施予定。申込受付期間は未発表(発表され次第このページを更新します)。",
+  "sessions": [],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.ipa.go.jp/shiken/2026/ap_koudo_sc_yotei.html", "note": "公式(IPA 令和8年度実施予定)" },
+    { "url": "https://www.ipa.go.jp/shiken/2026/ap_koudo_sc_kikan.html", "note": "公式(IPA 申込受付期間・試験実施期間)" }
+  ],
+  "lastVerified": "2026-07-16"
+}

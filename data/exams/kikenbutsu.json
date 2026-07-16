@@ -1,0 +1,18 @@
+{
+  "slug": "kikenbutsu",
+  "name": "危険物取扱者 乙種第4類(乙4)",
+  "shortName": "乙4",
+  "category": "設備・技術",
+  "organizer": "一般財団法人 消防試験研究センター",
+  "officialUrl": "https://www.shoubo-shiken.or.jp/",
+  "fee": null,
+  "examType": "varies",
+  "description": "ガソリン・灯油など引火性液体を扱うための国家資格。ガソリンスタンド・工場・ビルメンテナンスなど求人が多く、受験者数は全資格でもトップクラス。都道府県ごとに年複数回実施されており、居住地以外の都道府県でも受験できます。",
+  "variesNote": "試験日程・申込期間は都道府県(各支部)ごとに異なります。東京都は月数回、その他の道府県も年数回実施。公式サイトの試験日程検索で受験地の日程を確認してください。",
+  "sessions": [],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.shoubo-shiken.or.jp/", "note": "公式(消防試験研究センター)" }
+  ],
+  "lastVerified": "2026-07-16"
+}

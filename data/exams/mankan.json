@@ -1,0 +1,27 @@
+{
+  "slug": "mankan",
+  "name": "マンション管理士",
+  "shortName": "マン管",
+  "category": "不動産",
+  "organizer": "公益財団法人 マンション管理センター",
+  "officialUrl": "https://www.mankan.org/",
+  "fee": "9,400円",
+  "examType": "fixed",
+  "description": "マンション管理組合の運営や大規模修繕をコンサルティングする国家資格。管理業務主任者・宅建と試験範囲が重なるため、不動産系資格の同年トリプル受験の一角として人気です。試験は年1回、11月の最終日曜日。",
+  "sessions": [
+    {
+      "label": "2026年度(令和8年度)試験",
+      "examDate": "2026-11-29",
+      "applications": [
+        { "method": "インターネット申込", "start": "2026-08-03", "end": "2026-09-30", "endTime": "16:00" },
+        { "method": "郵送申込", "start": "2026-08-03", "end": "2026-08-31", "note": "消印有効" }
+      ]
+    }
+  ],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.mankan.org/", "note": "公式(マンション管理センター)" },
+    { "url": "https://studying.jp/mankan/about-more/mankan-schedule.html", "note": "スタディング" }
+  ],
+  "lastVerified": "2026-07-16"
+}

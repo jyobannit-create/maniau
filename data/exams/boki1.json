@@ -1,0 +1,25 @@
+{
+  "slug": "boki1",
+  "name": "日商簿記検定 1級",
+  "shortName": "簿記1級",
+  "category": "会計・金融",
+  "organizer": "日本商工会議所",
+  "officialUrl": "https://www.kentei.ne.jp/bookkeeping",
+  "fee": "8,800円(別途事務手数料がかかる場合あり)",
+  "examType": "fixed",
+  "description": "会計分野の最高峰資格のひとつで、税理士試験の受験資格にもなります。統一試験のみで実施され、試験は6月と11月の年2回だけ。ネット試験はありません。申込は受験地の商工会議所ごとに期間が異なります。",
+  "sessions": [
+    {
+      "label": "第174回 統一試験",
+      "examDate": "2026-11-15",
+      "examNote": "1級は6月・11月の年2回のみ実施",
+      "applications": [],
+      "applicationNote": "受験を希望する商工会議所の案内を確認(例年9月下旬〜10月頃に受付)"
+    }
+  ],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.kentei.ne.jp/calendar_2026", "note": "公式(商工会議所検定 2026年度日程)" }
+  ],
+  "lastVerified": "2026-07-16"
+}

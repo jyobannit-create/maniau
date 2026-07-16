@@ -1,0 +1,18 @@
+{
+  "slug": "it-passport",
+  "name": "ITパスポート試験",
+  "shortName": "ITパスポート",
+  "category": "IT",
+  "organizer": "独立行政法人 情報処理推進機構(IPA)",
+  "officialUrl": "https://www3.jitec.ipa.go.jp/JitesCbt/index.html",
+  "fee": "7,500円",
+  "examType": "cbt",
+  "description": "ITを利活用するすべての社会人・学生向けの国家試験。DX時代の基礎教養として、非エンジニアの受験者が年々増えています。CBT方式で通年実施されており、全国の会場から都合の良い日時を選んで受験できます。",
+  "cbtNote": "全国のテストセンターで通年実施。希望する会場・日時を選んで申込。",
+  "sessions": [],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www3.jitec.ipa.go.jp/JitesCbt/index.html", "note": "公式(ITパスポート試験)" }
+  ],
+  "lastVerified": "2026-07-16"
+}

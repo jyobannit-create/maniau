@@ -1,0 +1,26 @@
+{
+  "slug": "denko2",
+  "name": "第二種電気工事士",
+  "shortName": "電工二種",
+  "category": "設備・技術",
+  "organizer": "一般財団法人 電気技術者試験センター",
+  "officialUrl": "https://www.shiken.or.jp/construction/second/",
+  "fee": "インターネット申込 11,100円 / 郵送申込 12,500円",
+  "examType": "fixed",
+  "description": "住宅や店舗の電気工事に従事するための国家資格。手に職系資格の代表格で、未経験からの転職・副業・DIY目的まで受験層が幅広いのが特徴です。上期・下期の年2回実施。学科試験(CBTまたは筆記)と技能試験の2段階です。",
+  "sessions": [
+    {
+      "label": "2026年度 下期試験",
+      "examDate": "2026-10-25",
+      "examNote": "学科CBT方式: 9/24〜11/8の期間から選択 / 学科筆記方式: 10/25(日) / 技能試験: 12/12(土)または12/13(日)",
+      "applications": [
+        { "method": "申込受付(ネット・郵送共通)", "start": "2026-08-17", "end": "2026-09-03", "endTime": "17:00" }
+      ]
+    }
+  ],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.shiken.or.jp/construction/second/", "note": "公式(電気技術者試験センター)" }
+  ],
+  "lastVerified": "2026-07-16"
+}

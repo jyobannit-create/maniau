@@ -1,0 +1,19 @@
+{
+  "slug": "fp",
+  "name": "FP技能検定 2級・3級",
+  "shortName": "FP2・3級",
+  "category": "会計・金融",
+  "organizer": "日本FP協会 / 金融財政事情研究会(きんざい)",
+  "officialUrl": "https://www.jafp.or.jp/exam/",
+  "fee": null,
+  "examType": "cbt",
+  "description": "家計・保険・年金・税金・資産運用の知識を証明する国家検定。2026年度から2級・3級はCBT方式による通年実施に移行し、従来の年3回の一斉試験を待つ必要がなくなりました。日本FP協会ときんざいの2団体が実施しており、実技試験の科目が異なります。",
+  "cbtNote": "2級・3級はCBT方式で通年実施(メンテナンス等の休止期間あり)。受検手数料・実技科目は実施団体の公式サイトで確認。",
+  "sessions": [],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.jafp.or.jp/exam/schedule/", "note": "公式(日本FP協会 試験日程)" },
+    { "url": "https://www.kinzai.or.jp/fp/nittei-fp/48581.html", "note": "公式(きんざい 2026年度日程)" }
+  ],
+  "lastVerified": "2026-07-16"
+}

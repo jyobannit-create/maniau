@@ -1,0 +1,29 @@
+{
+  "slug": "gyoseishoshi",
+  "name": "行政書士",
+  "shortName": "行政書士",
+  "category": "法律",
+  "organizer": "一般財団法人 行政書士試験研究センター",
+  "officialUrl": "https://gyosei-shiken.or.jp/",
+  "fee": "10,400円",
+  "examType": "fixed",
+  "description": "官公署に提出する書類の作成・手続き代理を担う法律系国家資格。法律系資格の登竜門として社会人受験者が多く、独立開業も可能です。試験は年1回、11月の第2日曜日。申込は7月下旬〜8月で、インターネット申込と郵送で締切日が異なる点に注意が必要です。",
+  "sessions": [
+    {
+      "label": "2026年度(令和8年度)試験",
+      "examDate": "2026-11-08",
+      "examNote": "13:00〜16:00",
+      "applications": [
+        { "method": "インターネット申込", "start": "2026-07-21", "end": "2026-08-24", "endTime": "17:00" },
+        { "method": "郵送申込", "start": "2026-07-21", "end": "2026-08-17", "note": "消印有効" }
+      ],
+      "resultDate": "2027-01-27"
+    }
+  ],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://gyosei-shiken.or.jp/", "note": "公式(行政書士試験研究センター)" },
+    { "url": "https://www.tac-school.co.jp/kouza_gyosei/gyosei_sk_schedule.html", "note": "TAC" }
+  ],
+  "lastVerified": "2026-07-16"
+}

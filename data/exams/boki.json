@@ -1,0 +1,26 @@
+{
+  "slug": "boki",
+  "name": "日商簿記検定 2級・3級",
+  "shortName": "簿記2・3級",
+  "category": "会計・金融",
+  "organizer": "日本商工会議所",
+  "officialUrl": "https://www.kentei.ne.jp/bookkeeping",
+  "fee": "2級 5,500円 / 3級 3,300円(別途事務手数料がかかる場合あり)",
+  "examType": "fixed",
+  "description": "経理・会計の基礎力を証明する定番資格。就職・転職市場での知名度は抜群です。年3回の統一試験(ペーパー)に加え、2級・3級はネット試験(CBT)でほぼ通年受験できます。統一試験の申込は受験地の商工会議所ごとに期間・方法が異なるため、早めの確認が必須です。",
+  "cbtNote": "ネット試験(CBT)は全国のテストセンターでほぼ随時受験可能。統一試験の前後に施行休止期間あり。",
+  "sessions": [
+    {
+      "label": "第174回 統一試験",
+      "examDate": "2026-11-15",
+      "examNote": "申込期間・方法は受験地の商工会議所により異なる(例年、試験日の約1〜2ヶ月前)",
+      "applications": [],
+      "applicationNote": "受験を希望する商工会議所の案内を確認(例年9月下旬〜10月頃に受付)"
+    }
+  ],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.kentei.ne.jp/calendar_2026", "note": "公式(商工会議所検定 2026年度日程)" }
+  ],
+  "lastVerified": "2026-07-16"
+}

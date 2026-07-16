@@ -1,0 +1,27 @@
+{
+  "slug": "kangyo",
+  "name": "管理業務主任者",
+  "shortName": "管業",
+  "category": "不動産",
+  "organizer": "一般社団法人 マンション管理業協会",
+  "officialUrl": "https://www.kanrikyo.or.jp/",
+  "fee": "8,900円",
+  "examType": "fixed",
+  "description": "マンション管理会社に必置の国家資格。管理受託契約の重要事項説明などの独占業務を持ちます。マンション管理士と試験範囲が近く、1週間違いで併願する受験者が多数。試験は年1回、12月の第1日曜日。",
+  "sessions": [
+    {
+      "label": "2026年度(令和8年度)試験",
+      "examDate": "2026-12-06",
+      "applications": [
+        { "method": "Web申込", "start": "2026-08-03", "end": "2026-09-30" },
+        { "method": "郵送申込", "start": "2026-08-03", "end": "2026-08-24", "note": "当日消印有効" }
+      ]
+    }
+  ],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.kanrikyo.or.jp/", "note": "公式(マンション管理業協会)" },
+    { "url": "https://studying.jp/mankan/about-more/kangyou-schedule.html", "note": "スタディング" }
+  ],
+  "lastVerified": "2026-07-16"
+}
