@@ -12,7 +12,8 @@ const OUT_DIR = path.join(ROOT, "site");
 
 const SITE_NAME = "マニアウ";
 const TAGLINE = "まだ間に合う資格が、見つかる。";
-const BASE_URL = (process.env.BASE_URL || "https://jyobannit-create.github.io/maniau").replace(/\/$/, "");
+const CUSTOM_DOMAIN = "maniau-shikaku.com";
+const BASE_URL = (process.env.BASE_URL || `https://${CUSTOM_DOMAIN}`).replace(/\/$/, "");
 const URGENT_DAYS = 14; // 締切間近と判定する残日数
 
 // ---------- 日付ユーティリティ(すべてJST基準・日単位) ----------
@@ -542,6 +543,7 @@ await writeFile(path.join(OUT_DIR, "404.html"), page({
   depth: 0,
 }));
 await writeFile(path.join(OUT_DIR, ".nojekyll"), "");
+await writeFile(path.join(OUT_DIR, "CNAME"), CUSTOM_DOMAIN + "\n");
 
 const counts = exams.reduce((m, e) => ((m[e._c.state] = (m[e._c.state] || 0) + 1), m), {});
 console.log(`✅ build complete: ${exams.length} exams → ${OUT_DIR}`);

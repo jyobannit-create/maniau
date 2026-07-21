@@ -10,7 +10,7 @@ CTAは1ページ1つの原則(affiliate.url 未設定時は公式サイトリン
 | 項目 | 記入内容 |
 |------|---------|
 | サイト名 | マニアウ |
-| サイトURL | https://jyobannit-create.github.io/maniau/ |
+| サイトURL | https://maniau-shikaku.com/ |
 | サイトカテゴリ | 資格・スクール / 学び・教育 |
 | 月間PV(見込み) | 〜3,000(開設直後のため見込み) |
 | 更新頻度 | 週1回以上(自動更新) |
@@ -60,8 +60,8 @@ CTAは1ページ1つの原則(affiliate.url 未設定時は公式サイトリン
 4. 行政書士・マン管・賃管 — 講座単価が高い
 5. TOEIC — 対策アプリ系(スタディサプリENGLISH等)
 
-## 成長投資(収益が出始めたら)
+## 成長投資
 
-- 独自ドメイン取得(例: maniau.jp 系)— 取得後は BASE_URL 環境変数とCNAME設定を変更
-- Google Search Console 登録・sitemap送信(公開直後にやるのが理想)
+- 独自ドメイン取得: 完了(2026-07-21、maniau-shikaku.com / Cloudflare Registrar)
+- Google Search Console 登録・sitemap送信(公開直後にやるのが理想。次のタスク)
 - アクセス解析は軽量なCloudflare Web Analytics等(広告掲載の交渉材料になる)
