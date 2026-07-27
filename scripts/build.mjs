@@ -221,6 +221,7 @@ function page({ title, description, canonicalPath, body, jsonLd, depth = 0 }) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="aEB_pigYBWaZ-AELKusc7n4m5fnxmLfnBcnMy6T3Vfs" />
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${BASE_URL}${canonicalPath}">
