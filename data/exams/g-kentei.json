@@ -1,0 +1,27 @@
+{
+  "slug": "g-kentei",
+  "name": "G検定(ジェネラリスト検定)",
+  "shortName": "G検定",
+  "category": "IT",
+  "organizer": "一般社団法人 日本ディープラーニング協会(JDLA)",
+  "officialUrl": "https://www.jdla.org/certificate/general/",
+  "fee": "一般 13,200円 / 学生 5,500円(税込)",
+  "examType": "fixed",
+  "description": "AI・ディープラーニングの基礎知識を証明する検定。エンジニアだけでなく、事業企画・マネジメント層の受験者も多く、AI活用が進む企業での取得推奨が増えています。年6回のオンライン試験に加え、年3回の会場試験も実施。申込開始から試験直前まで受付期間が長めなのが特徴です。",
+  "sessions": [
+    {
+      "label": "2026年 第5回",
+      "examDate": "2026-09-05",
+      "examNote": "オンライン試験: 9/5(土)13:00〜14:40 / 会場試験: 9/4(金)〜9/6(日)",
+      "applications": [
+        { "method": "個人申込", "start": "2026-07-10", "end": "2026-08-28", "endTime": "23:59" },
+        { "method": "追加申込(個人・団体)", "start": "2026-08-29", "end": "2026-09-02", "endTime": "23:59", "note": "試験日の3日前23:59まで" }
+      ]
+    }
+  ],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.jdla.org/news/20260710001/", "note": "公式(JDLA 2026年第5回G検定受験申込開始のお知らせ)" }
+  ],
+  "lastVerified": "2026-07-27"
+}

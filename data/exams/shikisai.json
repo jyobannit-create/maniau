@@ -1,0 +1,27 @@
+{
+  "slug": "shikisai",
+  "name": "色彩検定",
+  "shortName": "色彩検定",
+  "category": "デザイン・クリエイティブ",
+  "organizer": "公益社団法人 色彩検定協会(AFT)",
+  "officialUrl": "https://www.aft.or.jp/",
+  "fee": "1級 15,000円 / 2級 10,000円 / 3級 7,000円 / UC級 6,000円(税込)",
+  "examType": "fixed",
+  "description": "色の知識・配色技術を証明する文部科学省後援の検定。デザイン・アパレル・広告・建築など色を扱う仕事全般で評価され、就職・転職のアピール材料としても人気です。夏期(3・2・UC級)と冬期(全級)の年2回実施。1級は冬期のみで、1次試験合格者だけが12月の2次試験に進めます。",
+  "sessions": [
+    {
+      "label": "2026年 冬期検定",
+      "examDate": "2026-11-08",
+      "examNote": "1級1次・2級・3級・UC級: 11/8(日) / 1級2次: 12/13(日、1次合格者のみ)",
+      "applications": [
+        { "method": "個人ネット申込", "start": "2026-08-10", "end": "2026-10-01" }
+      ]
+    }
+  ],
+  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "sources": [
+    { "url": "https://www.aft.or.jp/", "note": "公式(色彩検定協会 AFT)" },
+    { "url": "https://www.aft.or.jp/exam-orders", "note": "公式(色彩検定協会 受検案内・検定料)" }
+  ],
+  "lastVerified": "2026-07-27"
+}
