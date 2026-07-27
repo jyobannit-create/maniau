@@ -19,7 +19,7 @@
       "resultDate": "2026-11-12"
     }
   ],
-  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "affiliate": { "label": "楽天市場でFP1級実技の参考書を探す", "url": "https://af.moshimo.com/af/c/click?a_id=5706858&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FFP1%25E7%25B4%259A%25E5%25AE%259F%25E6%258A%2580%2B%25E3%2583%2586%25E3%2582%25AD%25E3%2582%25B9%25E3%2583%2588%2F", "note": "もしもアフィリエイト経由・楽天市場(参考書検索)・2026-07-27設定。講座提携(アガルート等)は実績蓄積後に再申請予定" },
   "sources": [
     { "url": "https://www.jafp.or.jp/exam/outline/1fp/", "note": "公式(日本FP協会 1級試験要綱)" },
     { "url": "https://www.jafp.or.jp/exam/schedule/", "note": "公式(日本FP協会 試験日程)" }

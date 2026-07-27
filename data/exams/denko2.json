@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "affiliate": { "label": "楽天市場で電工二種の参考書を探す", "url": "https://af.moshimo.com/af/c/click?a_id=5706858&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E7%25AC%25AC%25E4%25BA%258C%25E7%25A8%25AE%25E9%259B%25BB%25E6%25B0%2597%25E5%25B7%25A5%25E4%25BA%258B%25E5%25A3%25AB%2B%25E3%2583%2586%25E3%2582%25AD%25E3%2582%25B9%25E3%2583%2588%2F", "note": "もしもアフィリエイト経由・楽天市場(参考書検索)・2026-07-27設定。講座提携(アガルート等)は実績蓄積後に再申請予定" },
   "sources": [
     { "url": "https://www.shiken.or.jp/construction/second/", "note": "公式(電気技術者試験センター)" }
   ],

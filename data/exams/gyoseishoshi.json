@@ -20,7 +20,7 @@
       "resultDate": "2027-01-27"
     }
   ],
-  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "affiliate": { "label": "楽天市場で行政書士の参考書を探す", "url": "https://af.moshimo.com/af/c/click?a_id=5706858&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E8%25A1%258C%25E6%2594%25BF%25E6%259B%25B8%25E5%25A3%25AB%2B%25E3%2583%2586%25E3%2582%25AD%25E3%2582%25B9%25E3%2583%2588%2F", "note": "もしもアフィリエイト経由・楽天市場(参考書検索)・2026-07-27設定。講座提携(アガルート等)は実績蓄積後に再申請予定" },
   "sources": [
     { "url": "https://gyosei-shiken.or.jp/", "note": "公式(行政書士試験研究センター)" },
     { "url": "https://www.tac-school.co.jp/kouza_gyosei/gyosei_sk_schedule.html", "note": "TAC" }

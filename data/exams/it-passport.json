@@ -10,7 +10,7 @@
   "description": "ITを利活用するすべての社会人・学生向けの国家試験。DX時代の基礎教養として、非エンジニアの受験者が年々増えています。CBT方式で通年実施されており、全国の会場から都合の良い日時を選んで受験できます。",
   "cbtNote": "全国のテストセンターで通年実施。希望する会場・日時を選んで申込。",
   "sessions": [],
-  "affiliate": { "label": null, "url": null, "note": "ASP承認後に設定" },
+  "affiliate": { "label": "楽天市場でITパスポートの参考書を探す", "url": "https://af.moshimo.com/af/c/click?a_id=5706858&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FIT%25E3%2583%2591%25E3%2582%25B9%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%2B%25E3%2583%2586%25E3%2582%25AD%25E3%2582%25B9%25E3%2583%2588%2F", "note": "もしもアフィリエイト経由・楽天市場(参考書検索)・2026-07-27設定。講座提携(アガルート等)は実績蓄積後に再申請予定" },
   "sources": [
     { "url": "https://www3.jitec.ipa.go.jp/JitesCbt/index.html", "note": "公式(ITパスポート試験)" }
   ],
