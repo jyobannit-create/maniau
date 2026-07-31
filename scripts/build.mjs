@@ -452,7 +452,7 @@ function renderExam(exam) {
 
 // ---------- 固定ページ ----------
 
-const CONTACT_EMAIL_OBFUSCATED = "jyobanni.t[at]gmail.com"; // スパム対策で[at]表記
+const CONTACT_EMAIL_OBFUSCATED = "riveroffice.consulting[at]gmail.com"; // スパム対策で[at]表記
 
 const STATIC_PAGES = [
   {
