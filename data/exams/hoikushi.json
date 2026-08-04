@@ -5,7 +5,7 @@
   "category": "福祉・教育",
   "organizer": "一般社団法人 全国保育士養成協議会",
   "officialUrl": "https://www.hoyokyo.or.jp/exam/",
-  "fee": null,
+  "fee": "12,700円(決済方法により事務手数料が別途加算。クレジットカード決済は合計13,054円)",
   "examType": "fixed",
   "description": "国家資格・保育士になるための試験。年2回(前期・後期)実施され、後期試験の筆記は10月、実技は12月です。筆記試験は科目合格制で、合格した科目は3年間(条件により最長5年)有効。申込期間は約3週間と短く、締切を逃すと半年待ちになるため注意が必要です。",
   "sessions": [
@@ -21,7 +21,8 @@
   ],
   "affiliate": { "label": "四谷学院の保育士講座を見る(資料請求無料)", "url": "https://px.a8.net/svt/ejp?a8mat=4B8B4T+CKHGJ6+5IEI+5YJRM", "note": "A8.net経由・四谷学院通信講座・2026-07-28提携承認" },
   "sources": [
-    { "url": "https://www.hoyokyo.or.jp/exam/guidance/reiwa-8-2nd.html", "note": "公式(全国保育士養成協議会 令和8年後期受験案内)" }
+    { "url": "https://www.hoyokyo.or.jp/exam/guidance/reiwa-8-2nd.html", "note": "公式(全国保育士養成協議会 令和8年後期受験案内)" },
+    { "url": "https://www.hoyokyo.or.jp/exam/Howto-payment.html", "note": "公式(受験料・支払方法)" }
   ],
-  "lastVerified": "2026-07-27"
+  "lastVerified": "2026-08-04"
 }
