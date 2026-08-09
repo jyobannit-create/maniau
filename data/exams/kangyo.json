@@ -13,7 +13,7 @@
       "label": "2026年度(令和8年度)試験",
       "examDate": "2026-12-06",
       "applications": [
-        { "method": "Web申込", "start": "2026-08-03", "end": "2026-09-30" },
+        { "method": "Web申込", "start": "2026-08-03", "end": "2026-09-30", "endTime": "16:59" },
         { "method": "郵送申込", "start": "2026-08-03", "end": "2026-08-24", "note": "当日消印有効" }
       ]
     }
@@ -23,5 +23,5 @@
     { "url": "https://www.kanrikyo.or.jp/", "note": "公式(マンション管理業協会)" },
     { "url": "https://studying.jp/mankan/about-more/kangyou-schedule.html", "note": "スタディング" }
   ],
-  "lastVerified": "2026-08-04"
+  "lastVerified": "2026-08-10"
 }
