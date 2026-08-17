@@ -358,11 +358,15 @@ function renderIndex(exams) {
 
 // ---------- 資格詳細ページ ----------
 
-// shortNameを優先して使う。未設定/異常に長い場合のみ正式名称にフォールバック
-function displayName(exam) {
-  const sn = exam.shortName;
-  return sn && sn.length <= 10 ? sn : exam.name;
+// タイトルの表示幅を概算(全角=1・半角英数=0.5)。Google SERPでの実質的な切れ目の目安に近づけるため
+function charWidth(s) {
+  let w = 0;
+  for (const ch of s) w += /[\x00-\xff]/.test(ch) ? 0.5 : 1;
+  return w;
 }
+
+// titleの表示幅予算。これを超える場合のみshortNameへフォールバックする
+const TITLE_WIDTH_BUDGET = 32;
 
 // descriptionの補足文を指定長で切る(titleには使わない。あくまで説明文の丸め用)
 function truncate(s, max) {
@@ -385,11 +389,18 @@ function firstSentence(s, max = 100) {
   return cut.length > max ? truncate(cut, max) : cut;
 }
 
-// classify()が返すstateに応じてtitle/descriptionを組み立てる
-// 方針: exam.name ではなく shortName、カウントダウン文言は入れず絶対日付のみ、
-// データに存在しない日付は書かない(推測禁止)
+// 正式名称で組み立て、titleの表示幅予算を超える場合だけshortNameに差し替える。
+// 実測クエリ(GSC)はフルネームでの流入が確認されているため、文字数に余裕があるのに
+// 一律shortNameへ倒すと完全一致・太字ハイライトのメリットを失う。詳細はreports参照
 function buildExamMeta(exam, c) {
-  const name = displayName(exam);
+  const full = composeMeta(exam.name, exam, c);
+  if (charWidth(full.title) <= TITLE_WIDTH_BUDGET || !exam.shortName) return full;
+  return composeMeta(exam.shortName, exam, c);
+}
+
+// classify()が返すstateに応じてtitle/descriptionを組み立てる
+// 方針: カウントダウン文言は入れず絶対日付のみ、データに存在しない日付は書かない(推測禁止)
+function composeMeta(name, exam, c) {
   const session = c.session || null;
   const examDateUtc = session?.examDate ? parseDate(session.examDate) : null;
   const resultDateUtc = session?.resultDate ? parseDate(session.resultDate) : null;
