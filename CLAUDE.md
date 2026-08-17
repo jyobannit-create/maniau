@@ -12,6 +12,9 @@ node scripts/build.mjs   # site/ に静的サイトを生成
 
 デプロイは main への push で GitHub Actions が自動実行(検証→ビルド→GitHub Pages)。
 週次更新は `/update-exams` コマンド(.claude/commands/update-exams.md)で行う。
+SEO(検索パフォーマンス)の検証・改修は `seo-review` スキル(.claude/skills/seo-review/SKILL.md)の
+分析→実装→検証→人間承認フローに従う。実装エージェント任せの自己検証だけでは実測クエリとの
+不整合を見逃した実例があるため、検証ステップを省略しないこと。
 
 ## データの鉄則(最重要)
 
