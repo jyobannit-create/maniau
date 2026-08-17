@@ -42,6 +42,12 @@ function fmtIso(utc) {
   return new Date(utc).toISOString().slice(0, 10);
 }
 
+// title用の簡潔な日付表記(曜日なし)。「あと◯日」系のカウントダウンは含めない(絶対日付のみ)
+function fmtMD(utc) {
+  const d = new Date(utc);
+  return `${d.getUTCMonth() + 1}月${d.getUTCDate()}日`;
+}
+
 const TODAY = process.env.BUILD_DATE ? parseDate(process.env.BUILD_DATE) : jstTodayUTC();
 const daysUntil = (utc) => Math.round((utc - TODAY) / DAY);
 
@@ -208,6 +214,8 @@ document.querySelectorAll("[data-count]").forEach(function(el){
   var mode = el.getAttribute("data-mode") || "end";
   if(mode === "end"){
     el.textContent = days > 0 ? "あと" + days + "日" : (days === 0 ? "本日締切" : "受付終了");
+  } else if(mode === "exam"){
+    el.textContent = days > 0 ? "試験日まであと" + days + "日" : (days === 0 ? "本日が試験日" : "試験終了");
   } else {
     el.textContent = days > 0 ? "あと" + days + "日で開始" : "受付開始";
   }
@@ -350,6 +358,122 @@ function renderIndex(exams) {
 
 // ---------- 資格詳細ページ ----------
 
+// shortNameを優先して使う。未設定/異常に長い場合のみ正式名称にフォールバック
+function displayName(exam) {
+  const sn = exam.shortName;
+  return sn && sn.length <= 10 ? sn : exam.name;
+}
+
+// descriptionの補足文を指定長で切る(titleには使わない。あくまで説明文の丸め用)
+function truncate(s, max) {
+  if (!s) return "";
+  return s.length > max ? s.slice(0, max) + "…" : s;
+}
+
+// 文末に句点がなければ付ける(データ由来の注記文をそのまま文中に差し込むため)
+function withPeriod(s) {
+  if (!s) return "";
+  return /[。！？…]$/.test(s) ? s : `${s}。`;
+}
+
+// 最初の1文(句点まで)を取り出す。文中で不自然に「…」で切れるのを避けるため、
+// truncateの代わりにdescriptionへ差し込む注記文の丸め込みに使う
+function firstSentence(s, max = 100) {
+  if (!s) return "";
+  const idx = s.indexOf("。");
+  const cut = idx >= 0 ? s.slice(0, idx + 1) : s;
+  return cut.length > max ? truncate(cut, max) : cut;
+}
+
+// classify()が返すstateに応じてtitle/descriptionを組み立てる
+// 方針: exam.name ではなく shortName、カウントダウン文言は入れず絶対日付のみ、
+// データに存在しない日付は書かない(推測禁止)
+function buildExamMeta(exam, c) {
+  const name = displayName(exam);
+  const session = c.session || null;
+  const examDateUtc = session?.examDate ? parseDate(session.examDate) : null;
+  const resultDateUtc = session?.resultDate ? parseDate(session.resultDate) : null;
+
+  let main, description;
+
+  if (c.state === "open") {
+    const deadlineStr = fmtMD(c.deadline);
+    main = examDateUtc
+      ? `${name}の申込締切は${deadlineStr}|試験日${fmtMD(examDateUtc)}`
+      : `${name}の申込締切は${deadlineStr}`;
+
+    const timeNote = c.window.endTime ? `${c.window.endTime}まで` : "";
+    const otherApp = (session.applications || []).find((a) => a.method !== c.window.method);
+    const extraSessions = (exam.sessions || []).filter(
+      (s) => s !== session && (!s.examDate || parseDate(s.examDate) >= TODAY)
+    ).length;
+
+    description =
+      `${name}の申込締切は${deadlineStr}${timeNote ? `(${timeNote})` : ""}・${c.window.method}です。` +
+      (otherApp
+        ? `${otherApp.method}は${fmtMD(parseDate(otherApp.end))}まで${otherApp.note ? `(${otherApp.note})` : ""}です。`
+        : "") +
+      (examDateUtc ? `試験日は${fmtMD(examDateUtc)}です。` : "") +
+      (extraSessions ? `ほか年内に${extraSessions}回の実施日程があります。` : "") +
+      `最新の受験料・申込方法は公式サイトでご確認ください。`;
+  } else if (c.state === "upcoming") {
+    const openStr = fmtMD(c.opensOn);
+    main = examDateUtc
+      ? `${name}の申込受付は${openStr}開始|試験日${fmtMD(examDateUtc)}`
+      : `${name}の申込受付は${openStr}開始`;
+    description =
+      `${name}の申込受付は${openStr}から開始予定です。` +
+      (examDateUtc ? `試験日は${fmtMD(examDateUtc)}です。` : "") +
+      `受付開始後の申込方法は公式サイトでご確認ください。`;
+  } else if (c.state === "note") {
+    const round = session?.label?.match(/第(\d+)回/)?.[1];
+    if (round && examDateUtc) {
+      main = `${name}第${round}回の試験日は${fmtMD(examDateUtc)}|申込期間・受験料`;
+    } else if (examDateUtc) {
+      main = `${name}の試験日は${fmtMD(examDateUtc)}|申込期間・受験料`;
+    } else {
+      main = `${name}の申込期間・受験料`;
+    }
+    description =
+      (round && examDateUtc
+        ? `${name}第${round}回は${fmtMD(examDateUtc)}実施です。`
+        : examDateUtc
+        ? `${name}の試験日は${fmtMD(examDateUtc)}です。`
+        : "") +
+      withPeriod(truncate(session?.applicationNote || c?.note || "", 60)) +
+      `受験地により申込期間が異なるため、公式サイトでご確認ください。`;
+  } else if (c.state === "closed") {
+    main = examDateUtc
+      ? resultDateUtc
+        ? `${name}の試験日は${fmtMD(examDateUtc)}|合格発表${fmtMD(resultDateUtc)}`
+        : `${name}の試験日は${fmtMD(examDateUtc)}`
+      : `${name}の申込は終了しました`;
+    description =
+      (examDateUtc ? `${name}の試験日は${fmtMD(examDateUtc)}です。` : "") +
+      (resultDateUtc ? `合格発表は${fmtMD(resultDateUtc)}です。` : "") +
+      `申込は終了しています。次回日程は公式発表され次第、当サイトでも更新します。`;
+  } else if (c.state === "anytime") {
+    main = `${name}はいつでも受験可能|申込方法・受験料・試験会場`;
+    description =
+      (exam.cbtNote ? withPeriod(firstSentence(exam.cbtNote)) : `${name}はCBT方式で通年実施されています。`) +
+      `${name}の受験料・申込方法・試験会場は公式サイトでご確認ください。`;
+  } else if (c.state === "varies") {
+    main = `${name}の試験日程|受験地別の申込期間の調べ方`;
+    description =
+      (exam.variesNote ? withPeriod(firstSentence(exam.variesNote)) : `${name}の試験日程は地域により異なります。`) +
+      `${name}の受験地ごとの日程は公式サイトでご確認ください。`;
+  } else if (c.state === "tbd") {
+    main = `${name}の試験日程は未定|最新情報を随時更新`;
+    description = `${name}の${withPeriod(truncate(exam.tbdNote || "次回試験日程は現時点で未発表です", 70))}発表され次第、当サイトでも更新します。`;
+  } else {
+    // done等・想定外の状態向けフォールバック(従来の表記を踏襲)
+    main = `${name}の申込締切・試験日`;
+    description = `${name}の申込期間・締切日・試験日を掲載。${truncate(exam.description, 60)}`;
+  }
+
+  return { title: `${main} | ${SITE_NAME}`, description };
+}
+
 function windowState(w) {
   if (w.s <= TODAY && TODAY <= w.e) return `<span class="state open">受付中(あと${daysUntil(w.e)}日)</span>`;
   if (w.s > TODAY) return `<span class="state upcoming">${fmtDate(w.s, { year: false })}から</span>`;
@@ -373,6 +497,16 @@ function renderExam(exam) {
     banner = `<div class="status-banner blue">${esc(exam.variesNote || "試験日程は地域により異なります")}</div>`;
   } else if (c.state === "tbd") {
     banner = `<div class="status-banner gray">${esc(exam.tbdNote || "日程は未発表です。発表され次第更新します。")}</div>`;
+  } else if (c.state === "closed") {
+    const examDateUtc = c.session?.examDate ? parseDate(c.session.examDate) : null;
+    const resultDateUtc = c.session?.resultDate ? parseDate(c.session.resultDate) : null;
+    if (examDateUtc) {
+      const d = daysUntil(examDateUtc);
+      const countText = d > 0 ? `試験日まであと${d}日` : d === 0 ? "本日が試験日" : "試験終了";
+      banner = `<div class="status-banner blue">申込は終了しています。試験日は <span class="big" data-count="${fmtIso(examDateUtc)}" data-mode="exam">${countText}</span>(${fmtDate(examDateUtc)})です。${resultDateUtc ? `合格発表は${fmtDate(resultDateUtc)}です。` : ""}次回の申込日程は公式発表され次第、当サイトでも更新します。</div>`;
+    } else {
+      banner = `<div class="status-banner gray">今年度の申込受付は終了しています。次回日程が発表され次第更新します。</div>`;
+    }
   } else {
     banner = `<div class="status-banner gray">今年度の申込受付は終了しています。次回日程が発表され次第更新します。</div>`;
   }
@@ -440,9 +574,11 @@ function renderExam(exam) {
   </article>
 </div>`;
 
+  const meta = buildExamMeta(exam, c);
+
   return page({
-    title: `${exam.name}の申込締切・試験日【2026年度】| ${SITE_NAME}`,
-    description: `${exam.name}の2026年度の申込期間・締切日・試験日を掲載。${exam.description.slice(0, 60)}…`,
+    title: meta.title,
+    description: meta.description,
     canonicalPath: `/exams/${exam.slug}/`,
     body,
     jsonLd: jsonLd.length === 1 ? jsonLd[0] : jsonLd.length ? jsonLd : null,
@@ -483,7 +619,7 @@ const STATIC_PAGES = [
 <h2>広告について</h2>
 <p class="desc">当サイトは、アフィリエイトプログラム(A8.net、もしもアフィリエイト、afb等)に参加し、記事内に広告(PR)リンクを掲載する場合があります。広告リンクを経由して商品・サービスの申込が行われた場合、提携先から当サイトに報酬が支払われることがあります。掲載価格・キャンペーン等の最新条件は、必ずリンク先の公式ページでご確認ください。</p>
 <h2>アクセス解析について</h2>
-<p class="desc">当サイトでは現在、Cookieを利用したアクセス解析ツールは使用していません。導入する場合は本ポリシーを更新のうえ告知します。</p>
+<p class="desc">当サイトでは、Cookieを利用しないアクセス解析ツール「Cloudflare Web Analytics」を導入しています。個々の訪問者を識別・追跡するものではなく、ページビュー数などの集計データのみを取得しています。</p>
 <h2>免責事項</h2>
 <p class="desc">掲載情報は各実施団体の公表内容をもとに更新していますが、その正確性・完全性を保証するものではありません。試験の申込にあたっては必ず実施団体の公式サイトで最新情報をご確認ください。当サイトの利用により生じたいかなる損害についても、運営者は責任を負いかねます。</p>
 <h2>著作権</h2>
