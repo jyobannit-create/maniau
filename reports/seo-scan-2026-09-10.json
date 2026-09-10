@@ -1,0 +1,147 @@
+{
+  "date": "2026-09-10",
+  "snapshot": "2026-09-10.json",
+  "partial": true,
+  "totalFindings": 11,
+  "actionable": 7,
+  "hasHighRegression": false,
+  "recentlyChangedPages": [
+    "shikisai",
+    "toeic",
+    "kangyo",
+    "mankan",
+    "e-shiken",
+    "g-kentei",
+    "oyo-joho",
+    "gyoseishoshi",
+    "fp1",
+    "fp",
+    "boki1",
+    "boki",
+    "kikenbutsu"
+  ],
+  "findings": {
+    "regressions": [],
+    "ctrOpportunities": [
+      {
+        "page": "https://maniau-shikaku.com/exams/shikisai/",
+        "slug": "shikisai",
+        "impressions": 603,
+        "position": 6.7,
+        "ctr": 0,
+        "expectedCtr": 0.032,
+        "lostClicksPer90d": 19,
+        "recentlyChanged": "2026-09-10",
+        "severity": "hold"
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/fp1/",
+        "slug": "fp1",
+        "impressions": 408,
+        "position": 9.4,
+        "ctr": 0,
+        "expectedCtr": 0.022,
+        "lostClicksPer90d": 9,
+        "recentlyChanged": "2026-09-10",
+        "severity": "hold"
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/boki1/",
+        "slug": "boki1",
+        "impressions": 108,
+        "position": 9.2,
+        "ctr": 0,
+        "expectedCtr": 0.023,
+        "lostClicksPer90d": 2,
+        "recentlyChanged": "2026-09-10",
+        "severity": "hold"
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/fp/",
+        "slug": "fp",
+        "impressions": 90,
+        "position": 10.4,
+        "ctr": 0,
+        "expectedCtr": 0.02,
+        "lostClicksPer90d": 2,
+        "recentlyChanged": "2026-09-10",
+        "severity": "hold"
+      }
+    ],
+    "contentGaps": [
+      {
+        "query": "基本情報技術者試験 日程",
+        "impressions": 80,
+        "position": 25.8,
+        "matchedExam": "kihon-joho",
+        "note": "既存ページはあるが下位/未対応"
+      },
+      {
+        "query": "応用情報技術者試験 試験日",
+        "impressions": 46,
+        "position": 28.5,
+        "matchedExam": "oyo-joho",
+        "note": "既存ページはあるが下位/未対応"
+      },
+      {
+        "query": "マンション管理士 試験日",
+        "impressions": 46,
+        "position": 31.9,
+        "matchedExam": "mankan",
+        "note": "既存ページはあるが下位/未対応"
+      },
+      {
+        "query": "toeic 公開テスト",
+        "impressions": 42,
+        "position": 25.4,
+        "matchedExam": "toeic",
+        "note": "既存ページはあるが下位/未対応"
+      },
+      {
+        "query": "衛生管理者試験 申し込み",
+        "impressions": 33,
+        "position": 39.8,
+        "matchedExam": "eisei-kanri",
+        "note": "既存ページはあるが下位/未対応"
+      },
+      {
+        "query": "保育士 試験 後期 申し込み",
+        "impressions": 32,
+        "position": 29.1,
+        "matchedExam": "hoikushi",
+        "note": "既存ページはあるが下位/未対応"
+      },
+      {
+        "query": "賃貸不動産経営管理士 試験日",
+        "impressions": 28,
+        "position": 37.1,
+        "matchedExam": "chintai",
+        "note": "既存ページはあるが下位/未対応"
+      }
+    ],
+    "titleLint": [],
+    "risingQueries": []
+  },
+  "annotations": [
+    {
+      "date": "2026-09-10",
+      "commit": "78da1c5",
+      "pages": [
+        "shikisai",
+        "toeic",
+        "kangyo",
+        "mankan",
+        "e-shiken",
+        "g-kentei",
+        "oyo-joho",
+        "gyoseishoshi",
+        "fp1",
+        "fp",
+        "boki1",
+        "boki",
+        "kikenbutsu"
+      ],
+      "note": "P0-1: title/descriptionを情報一覧型に改修(答え完結型を解消)。P0-2: BreadcrumbList追加。"
+    }
+  ]
+}

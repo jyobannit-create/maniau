@@ -1,4 +1,11 @@
 site/
 reports/cron.log
+reports/gsc/cron.log
+reports/seo-auto.log
 .DS_Store
 *.xlsx
+
+# サービスアカウント鍵は絶対にコミットしない(リポジトリ外の ~/.config/maniau/ に置く)
+gsc-sa.json
+*service-account*.json
+*-sa.json

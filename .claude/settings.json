@@ -10,12 +10,20 @@
       "WebFetch",
       "Bash(node scripts/check.mjs)",
       "Bash(node scripts/build.mjs)",
+      "Bash(node scripts/gsc-fetch.mjs)",
+      "Bash(node scripts/seo-scan.mjs)",
       "Bash(git status:*)",
       "Bash(git diff:*)",
       "Bash(git log:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git switch:*)",
+      "Bash(git branch:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr view:*)",
+      "Bash(gh run list:*)",
+      "Bash(gh run view:*)"
     ]
   }
 }

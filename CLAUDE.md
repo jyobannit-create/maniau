@@ -6,15 +6,19 @@
 ## コマンド
 
 ```bash
-node scripts/check.mjs   # データ検証(エラーで exit 1)
-node scripts/build.mjs   # site/ に静的サイトを生成
+node scripts/check.mjs      # データ検証(エラーで exit 1)
+node scripts/build.mjs      # site/ に静的サイトを生成
+node scripts/gsc-fetch.mjs  # Search Console API で実測データを取得 → reports/gsc/
+node scripts/seo-scan.mjs   # GSC履歴 + ビルドからSEO改善機会・順位回帰を検出 → reports/seo-scan-*
 ```
 
 デプロイは main への push で GitHub Actions が自動実行(検証→ビルド→GitHub Pages)。
-週次更新は `/update-exams` コマンド(.claude/commands/update-exams.md)で行う。
+週次のデータ更新は `/update-exams` コマンド(.claude/commands/update-exams.md)で行う。
 SEO(検索パフォーマンス)の検証・改修は `seo-review` スキル(.claude/skills/seo-review/SKILL.md)の
-分析→実装→検証→人間承認フローに従う。実装エージェント任せの自己検証だけでは実測クエリとの
+**分析→実装→検証→人間承認** フローに従う。実装エージェント任せの自己検証だけでは実測クエリとの
 不整合を見逃した実例があるため、検証ステップを省略しないこと。
+`/seo-review --auto` は PR作成まで無人・**mainへのマージだけ人間**の半自動モード。
+自動運用(launchd)の全体像は docs/AUTOMATION.md。
 
 ## データの鉄則(最重要)
 

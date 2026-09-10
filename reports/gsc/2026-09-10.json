@@ -1,0 +1,1160 @@
+{
+  "fetchedAt": "2026-09-10T10:30:00Z",
+  "property": "https://maniau-shikaku.com/",
+  "source": "browser-manual-2026-09-10",
+  "note": "初期スナップショット。Claude in Chrome で GSC 検索パフォーマンスから手動取得(過去3か月)。byQuery は表示回数6以上のみ収録の部分データ。byPageQuery は未取得のため空(seo-scan は byQuery からの推定マッピングにフォールバックする)。次回以降は scripts/gsc-fetch.mjs が API でフル取得する。",
+  "windowDays": 90,
+  "partial": true,
+  "current": {
+    "range": {
+      "start": "2026-06-09",
+      "end": "2026-09-07"
+    },
+    "totals": {
+      "clicks": 18,
+      "impressions": 7260,
+      "ctr": 0.0025,
+      "position": 16.1
+    },
+    "byQuery": [
+      {
+        "query": "e資格 試験日",
+        "clicks": 0,
+        "impressions": 130,
+        "ctr": 0,
+        "position": 9.5
+      },
+      {
+        "query": "応用情報技術者試験 申し込み",
+        "clicks": 0,
+        "impressions": 123,
+        "ctr": 0,
+        "position": 15.9
+      },
+      {
+        "query": "色彩検定 日程",
+        "clicks": 0,
+        "impressions": 111,
+        "ctr": 0,
+        "position": 2
+      },
+      {
+        "query": "管理業務主任者 試験日",
+        "clicks": 0,
+        "impressions": 98,
+        "ctr": 0,
+        "position": 21.8
+      },
+      {
+        "query": "基本情報技術者試験 日程",
+        "clicks": 0,
+        "impressions": 80,
+        "ctr": 0,
+        "position": 25.8
+      },
+      {
+        "query": "応用情報技術者試験 試験日",
+        "clicks": 0,
+        "impressions": 46,
+        "ctr": 0,
+        "position": 28.5
+      },
+      {
+        "query": "マンション管理士 試験日",
+        "clicks": 0,
+        "impressions": 46,
+        "ctr": 0,
+        "position": 31.9
+      },
+      {
+        "query": "色彩検定 申し込み期間",
+        "clicks": 0,
+        "impressions": 44,
+        "ctr": 0,
+        "position": 9.3
+      },
+      {
+        "query": "g検定 試験日",
+        "clicks": 0,
+        "impressions": 42,
+        "ctr": 0,
+        "position": 12.8
+      },
+      {
+        "query": "toeic 公開テスト",
+        "clicks": 0,
+        "impressions": 42,
+        "ctr": 0,
+        "position": 25.4
+      },
+      {
+        "query": "色彩検定 申し込み 期限",
+        "clicks": 0,
+        "impressions": 40,
+        "ctr": 0,
+        "position": 7.5
+      },
+      {
+        "query": "基本情報処理技術者試験 日程",
+        "clicks": 0,
+        "impressions": 37,
+        "ctr": 0,
+        "position": 21.8
+      },
+      {
+        "query": "g検定 申し込み",
+        "clicks": 1,
+        "impressions": 35,
+        "ctr": 0.0286,
+        "position": 20.8
+      },
+      {
+        "query": "衛生管理者試験 申し込み",
+        "clicks": 0,
+        "impressions": 33,
+        "ctr": 0,
+        "position": 39.8
+      },
+      {
+        "query": "保育士 試験 後期 申し込み",
+        "clicks": 0,
+        "impressions": 32,
+        "ctr": 0,
+        "position": 29.1
+      },
+      {
+        "query": "衛生管理者 試験 申し込み",
+        "clicks": 0,
+        "impressions": 32,
+        "ctr": 0,
+        "position": 40
+      },
+      {
+        "query": "保育士試験 後期",
+        "clicks": 0,
+        "impressions": 28,
+        "ctr": 0,
+        "position": 9.9
+      },
+      {
+        "query": "賃貸不動産経営管理士 試験日",
+        "clicks": 0,
+        "impressions": 28,
+        "ctr": 0,
+        "position": 37.1
+      },
+      {
+        "query": "衛生管理者 申し込み",
+        "clicks": 0,
+        "impressions": 28,
+        "ctr": 0,
+        "position": 40.8
+      },
+      {
+        "query": "保育士 試験日",
+        "clicks": 0,
+        "impressions": 27,
+        "ctr": 0,
+        "position": 38.8
+      },
+      {
+        "query": "衛生管理者試験 北海道 日程",
+        "clicks": 0,
+        "impressions": 26,
+        "ctr": 0,
+        "position": 29.7
+      },
+      {
+        "query": "行政書士 締め切り",
+        "clicks": 0,
+        "impressions": 25,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "query": "基本情報技術者 試験日",
+        "clicks": 0,
+        "impressions": 25,
+        "ctr": 0,
+        "position": 24.4
+      },
+      {
+        "query": "第二種衛生管理者 試験日",
+        "clicks": 0,
+        "impressions": 25,
+        "ctr": 0,
+        "position": 33
+      },
+      {
+        "query": "マン 管 試験",
+        "clicks": 0,
+        "impressions": 25,
+        "ctr": 0,
+        "position": 39.1
+      },
+      {
+        "query": "衛生管理者申し込み",
+        "clicks": 0,
+        "impressions": 25,
+        "ctr": 0,
+        "position": 41.3
+      },
+      {
+        "query": "安全管理者 試験日程",
+        "clicks": 0,
+        "impressions": 25,
+        "ctr": 0,
+        "position": 41.4
+      },
+      {
+        "query": "行政書士 締切",
+        "clicks": 0,
+        "impressions": 24,
+        "ctr": 0,
+        "position": 9.4
+      },
+      {
+        "query": "行政書士の試験日",
+        "clicks": 0,
+        "impressions": 24,
+        "ctr": 0,
+        "position": 22.5
+      },
+      {
+        "query": "toeic 3月16日",
+        "clicks": 0,
+        "impressions": 24,
+        "ctr": 0,
+        "position": 27.4
+      },
+      {
+        "query": "電気工事士2種 申し込み",
+        "clicks": 0,
+        "impressions": 24,
+        "ctr": 0,
+        "position": 46.5
+      },
+      {
+        "query": "itパスポート 試験日",
+        "clicks": 1,
+        "impressions": 23,
+        "ctr": 0.0435,
+        "position": 20.1
+      },
+      {
+        "query": "管理業務主任者申し込み",
+        "clicks": 0,
+        "impressions": 23,
+        "ctr": 0,
+        "position": 16.3
+      },
+      {
+        "query": "マンション管理士試験日 2026",
+        "clicks": 0,
+        "impressions": 22,
+        "ctr": 0,
+        "position": 10.3
+      },
+      {
+        "query": "マンション管理士 試験日 2026",
+        "clicks": 0,
+        "impressions": 22,
+        "ctr": 0,
+        "position": 11.5
+      },
+      {
+        "query": "危険物乙4 試験日",
+        "clicks": 0,
+        "impressions": 21,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "query": "マンション管理士 申込期間",
+        "clicks": 0,
+        "impressions": 21,
+        "ctr": 0,
+        "position": 10.5
+      },
+      {
+        "query": "保育士 試験 日程",
+        "clicks": 0,
+        "impressions": 21,
+        "ctr": 0,
+        "position": 42.8
+      },
+      {
+        "query": "第1種衛生管理者 試験日",
+        "clicks": 0,
+        "impressions": 20,
+        "ctr": 0,
+        "position": 35.9
+      },
+      {
+        "query": "e資格 申し込み",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0,
+        "position": 10.6
+      },
+      {
+        "query": "管理業務主任者試験日",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0,
+        "position": 21.5
+      },
+      {
+        "query": "第一種衛生管理者 試験日",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0,
+        "position": 38.7
+      },
+      {
+        "query": "管理業務主任者 申し込み 2026",
+        "clicks": 1,
+        "impressions": 18,
+        "ctr": 0.0556,
+        "position": 11.9
+      },
+      {
+        "query": "保育士 試験 10月",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0,
+        "position": 29.3
+      },
+      {
+        "query": "衛生管理者 受験日",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0,
+        "position": 34.3
+      },
+      {
+        "query": "e資格試験日",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0,
+        "position": 8.4
+      },
+      {
+        "query": "応用情報技術者試験申し込み",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0,
+        "position": 16
+      },
+      {
+        "query": "基本情報技術者試験 申し込み",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0,
+        "position": 24.4
+      },
+      {
+        "query": "基本情報技術者試験申し込み",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0,
+        "position": 25.9
+      },
+      {
+        "query": "衛生管理者 試験日",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0,
+        "position": 36.1
+      },
+      {
+        "query": "保育士 試験 日程 2024",
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0,
+        "position": 45.7
+      },
+      {
+        "query": "応用情報技術者試験 申し込み いつから",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0,
+        "position": 12.1
+      },
+      {
+        "query": "管理業務主任者願書",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0,
+        "position": 21.5
+      },
+      {
+        "query": "基本情報技術者試験日",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0,
+        "position": 23
+      },
+      {
+        "query": "保育士 試験 申し込み",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0,
+        "position": 41.6
+      },
+      {
+        "query": "マンション管理士 試験",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0,
+        "position": 45.6
+      },
+      {
+        "query": "基本情報技術者試験 試験日:2026",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 10.1
+      },
+      {
+        "query": "管理業務主任者 申し込み",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 16.6
+      },
+      {
+        "query": "toeic3月",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 19.4
+      },
+      {
+        "query": "マンション管理士申し込み",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 24.5
+      },
+      {
+        "query": "応用情報技術者試験日程",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 25.4
+      },
+      {
+        "query": "行政書士試験 申し込み 2025",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 31.4
+      },
+      {
+        "query": "保育士 試験 料金",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 40
+      },
+      {
+        "query": "保育士 試験 いくら",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 40.1
+      },
+      {
+        "query": "toeic® listening & reading公開テスト",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 7.2
+      },
+      {
+        "query": "e資格 申し込み 2026",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 7.7
+      },
+      {
+        "query": "保育士試験 2026 後期 申し込み",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 8.3
+      },
+      {
+        "query": "保育士試験後期",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 10.8
+      },
+      {
+        "query": "管理業務主任者 試験 いつ",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 11.8
+      },
+      {
+        "query": "toeicl&r日程",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 21.3
+      },
+      {
+        "query": "基本情報技術者試験日程",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 23.6
+      },
+      {
+        "query": "toeic 日程",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 25.8
+      },
+      {
+        "query": "応用情報技術者試験試験日",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 28.1
+      },
+      {
+        "query": "マンション管理士 申し込み",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0,
+        "position": 14.5
+      },
+      {
+        "query": "toeic9月",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0,
+        "position": 22.4
+      },
+      {
+        "query": "管理業務主任者合格発表日",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0,
+        "position": 24
+      },
+      {
+        "query": "基本情報技術者試験日程下期",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0,
+        "position": 27.8
+      },
+      {
+        "query": "保育士 試験 受験料",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0,
+        "position": 34.9
+      },
+      {
+        "query": "保育士 試験 いつ",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0,
+        "position": 43.6
+      },
+      {
+        "query": "g 検定 申し込み",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 19.8
+      },
+      {
+        "query": "マンション管理士試験日2022",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 21.7
+      },
+      {
+        "query": "管理業務主任者2022試験日",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 23.9
+      },
+      {
+        "query": "管理業務主任者受験料",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 27.2
+      },
+      {
+        "query": "応用情報技術者試験日",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 28.3
+      },
+      {
+        "query": "色彩検定 試験日",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0,
+        "position": 2
+      },
+      {
+        "query": "e資格 受験日",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "query": "管理業務主任者試験日2022",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0,
+        "position": 19.9
+      },
+      {
+        "query": "応用情報技術者試験 申し込み 2026",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0,
+        "position": 21.4
+      },
+      {
+        "query": "保育士 試験 値段",
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0,
+        "position": 42.9
+      },
+      {
+        "query": "g検定 日程",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 14.7
+      },
+      {
+        "query": "基本情報技術者試験日程2021",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 24.9
+      },
+      {
+        "query": "e 資格 申し込み 2024",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 25.4
+      },
+      {
+        "query": "ジェネラリスト検定 試験日",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 8.8
+      },
+      {
+        "query": "管理業務主任者試験 日 申し込み",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 10.1
+      },
+      {
+        "query": "g 検定 試験日",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 12
+      },
+      {
+        "query": "マンション管理士受験料",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 25.4
+      },
+      {
+        "query": "itパスポート 受験",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 25.8
+      },
+      {
+        "query": "管理業務主任者受験票",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 29
+      },
+      {
+        "query": "it パスポート 申し込み",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 32.1
+      },
+      {
+        "query": "保育士 試験 費用",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 36.6
+      },
+      {
+        "query": "保育士 試験 金額",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 40.2
+      },
+      {
+        "query": "保育士 試験 4月",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 48.5
+      },
+      {
+        "query": "2026 マンション管理士 試験日 公式",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 8.6
+      },
+      {
+        "query": "色彩検定 2級 試験日 2026",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 9.3
+      },
+      {
+        "query": "マンション管理士 受験日",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 10.7
+      },
+      {
+        "query": "マンション管理士 日程",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 10.7
+      },
+      {
+        "query": "色彩検定 受験料",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 11.1
+      },
+      {
+        "query": "fp1 級 試験 日",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 15
+      },
+      {
+        "query": "管理 業務 主任 者 申し込み",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 24.9
+      },
+      {
+        "query": "管理業務主任者試験日令和4年",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 25.3
+      },
+      {
+        "query": "itパスポート申し込み期限",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 25.7
+      },
+      {
+        "query": "保育 士 試験 後期 申し込み",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 25.9
+      },
+      {
+        "query": "基本 情報 技術 者 試験 申し込み",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 26
+      },
+      {
+        "query": "it パスポート 試験 日",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 26.7
+      },
+      {
+        "query": "e資格 認定プログラム 申し込み",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 28.6
+      },
+      {
+        "query": "基本 情報 技術 者 試験 試験 日",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 29.7
+      },
+      {
+        "query": "行政書士 試験日",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 30.3
+      },
+      {
+        "query": "衛生 管理 者 受験 日",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 33.1
+      },
+      {
+        "query": "保育士 試験 申請",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 45
+      },
+      {
+        "query": "乙4 試験日",
+        "clicks": 1,
+        "impressions": 6,
+        "ctr": 0.1667,
+        "position": 11.2
+      },
+      {
+        "query": "色彩検定 3級 日程",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 6.3
+      },
+      {
+        "query": "itパスポート 試験日程 2026",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 9.5
+      },
+      {
+        "query": "日商簿記1級 試験日",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 10.5
+      },
+      {
+        "query": "管理業務主任者 試験日 申し込み",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 10.5
+      },
+      {
+        "query": "色彩検定 申し込み",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 10.7
+      },
+      {
+        "query": "マン管 試験日",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 11.7
+      },
+      {
+        "query": "電気工事士2種",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 11.8
+      },
+      {
+        "query": "色彩検定 uc級 申し込み",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 16.8
+      },
+      {
+        "query": "toeic 試験日",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 20.3
+      },
+      {
+        "query": "itパスポート受験",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 25.5
+      },
+      {
+        "query": "基本情報技術者試験 いつ",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 25.7
+      },
+      {
+        "query": "保育 士 試験 後期 申し込み 期間",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 29.2
+      },
+      {
+        "query": "マンション管理士 試験 申し込み",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 32.7
+      },
+      {
+        "query": "保育士 試験 願書",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 34.3
+      },
+      {
+        "query": "保育士 試験 マイページ",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 35.3
+      },
+      {
+        "query": "衛生管理者試験日程",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 42.5
+      },
+      {
+        "query": "第 二 種 電気 工事 士 試験 日",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 61.3
+      },
+      {
+        "query": "電気 工事 士 2 種 試験 日",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 63.2
+      },
+      {
+        "query": "電気工事士2種試験日",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 82.5
+      }
+    ],
+    "byPage": [
+      {
+        "page": "https://maniau-shikaku.com/exams/toeic/",
+        "clicks": 3,
+        "impressions": 924,
+        "ctr": 0.0032,
+        "position": 11.3
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/kangyo/",
+        "clicks": 1,
+        "impressions": 725,
+        "ctr": 0.0014,
+        "position": 14
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/shikisai/",
+        "clicks": 0,
+        "impressions": 603,
+        "ctr": 0,
+        "position": 6.7
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/g-kentei/",
+        "clicks": 3,
+        "impressions": 586,
+        "ctr": 0.0051,
+        "position": 10.8
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/oyo-joho/",
+        "clicks": 0,
+        "impressions": 564,
+        "ctr": 0,
+        "position": 14.8
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/mankan/",
+        "clicks": 1,
+        "impressions": 559,
+        "ctr": 0.0018,
+        "position": 16.5
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/hoikushi/",
+        "clicks": 0,
+        "impressions": 515,
+        "ctr": 0,
+        "position": 24.9
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/eisei-kanri/",
+        "clicks": 0,
+        "impressions": 464,
+        "ctr": 0,
+        "position": 32.5
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/e-shiken/",
+        "clicks": 2,
+        "impressions": 413,
+        "ctr": 0.0048,
+        "position": 11.9
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/fp1/",
+        "clicks": 0,
+        "impressions": 408,
+        "ctr": 0,
+        "position": 9.4
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/kihon-joho/",
+        "clicks": 0,
+        "impressions": 357,
+        "ctr": 0,
+        "position": 22.7
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/gyoseishoshi/",
+        "clicks": 0,
+        "impressions": 256,
+        "ctr": 0,
+        "position": 13.8
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/it-passport/",
+        "clicks": 2,
+        "impressions": 158,
+        "ctr": 0.0127,
+        "position": 20.5
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/kikenbutsu/",
+        "clicks": 2,
+        "impressions": 141,
+        "ctr": 0.0142,
+        "position": 11.1
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/denko2/",
+        "clicks": 0,
+        "impressions": 138,
+        "ctr": 0,
+        "position": 51.4
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/boki1/",
+        "clicks": 0,
+        "impressions": 108,
+        "ctr": 0,
+        "position": 9.2
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/chintai/",
+        "clicks": 2,
+        "impressions": 92,
+        "ctr": 0.0217,
+        "position": 18.9
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/fp/",
+        "clicks": 0,
+        "impressions": 90,
+        "ctr": 0,
+        "position": 10.4
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/takken/",
+        "clicks": 0,
+        "impressions": 67,
+        "ctr": 0,
+        "position": 61.2
+      },
+      {
+        "page": "https://maniau-shikaku.com/",
+        "clicks": 1,
+        "impressions": 63,
+        "ctr": 0.0159,
+        "position": 7.2
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/boki/",
+        "clicks": 0,
+        "impressions": 55,
+        "ctr": 0,
+        "position": 12.8
+      },
+      {
+        "page": "https://maniau-shikaku.com/about/",
+        "clicks": 2,
+        "impressions": 3,
+        "ctr": 0.6667,
+        "position": 4
+      },
+      {
+        "page": "https://maniau-shikaku.com/privacy/",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 4.5
+      }
+    ],
+    "byPageQuery": [],
+    "byDate": []
+  }
+}
