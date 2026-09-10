@@ -5,8 +5,9 @@
 // 依存ゼロ(Node標準 + macOS標準の osascript / curl)。
 //
 // macOS通知が出ない場合は「システム設定 > 通知 > スクリプトエディタ」を許可する。
-// メール通知(任意): ~/.config/maniau/gmail-notify に1行
-//     you@gmail.com 16桁のアプリパスワード
+// メール通知(任意): ~/.config/maniau/gmail-notify に2行
+//     1行目: 通知を受け取る Gmail アドレス
+//     2行目: 16桁のアプリパスワード(スペースは無視される)
 //   を書くと、通知に加えて自分宛にメールを送る(Gmailの2段階認証+アプリパスワードが必要)。
 
 import { execFileSync } from "node:child_process";
@@ -74,9 +75,10 @@ try {
 
 // ── メール通知(任意) ──
 try {
-  const conf = readFileSync(path.join(homedir(), ".config", "maniau", "gmail-notify"), "utf8").trim();
-  const [addr, ...pwParts] = conf.split(/\s+/);
-  const appPw = pwParts.join("");
+  const conf = readFileSync(path.join(homedir(), ".config", "maniau", "gmail-notify"), "utf8");
+  const lines = conf.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+  const addr = (lines[0] || "").match(/[^\s@]+@[^\s@]+/)?.[0] || "";
+  const appPw = lines.slice(1).join("").replace(/\s+/g, "");
   if (addr && appPw) {
     const mail =
       [
