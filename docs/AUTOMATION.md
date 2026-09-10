@@ -129,6 +129,20 @@ launchctl list | grep maniau
 - `com.maniau.gsc-scan` — 毎週月曜 7:30(update-exams の30分後)。取得とスキャンのみ。PRは作らない
 - `com.maniau.seo-auto` — 毎月1日 8:00。`/seo-auto` コマンド(= seo-review スキルの --auto フロー)を実行し、指摘があればPRを作る。手動で回すなら対話セッションで `/seo-review --auto`
 
+3ジョブとも実行の最後に `node scripts/notify.mjs <ジョブ名> <終了コード> <ログ>` を呼び、**macOSの通知センターに結果を表示**する(✅完了 / ⚠️未push・順位下落 / ❌失敗)。通知が出ない場合は「システム設定 > 通知」で osascript(スクリプトエディタ)を許可する。
+
+### 認証(claude CLI)
+
+update-exams と seo-auto は `claude -p` を無人実行するため、対話ログインではなく長期トークンを使う。
+
+```bash
+claude setup-token                       # ブラウザ認可 → sk-ant-oat01-... が表示される
+(umask 177; cat > ~/.config/maniau/claude-token)   # 貼り付け → Enter → Ctrl-D
+```
+
+plist が `export CLAUDE_CODE_OAUTH_TOKEN="$(cat ~/.config/maniau/claude-token)"` で読み込む。
+トークンは約1年で失効するので、`Failed to authenticate` が出たら再生成する。
+
 ## 障害・注意
 
 | 症状 | 確認する場所 | 対応 |
