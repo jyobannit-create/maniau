@@ -5,7 +5,7 @@
   "category": "設備・技術",
   "organizer": "一般財団法人 消防試験研究センター",
   "officialUrl": "https://www.shoubo-shiken.or.jp/",
-  "fee": null,
+  "fee": "乙種 5,300円",
   "examType": "varies",
   "description": "ガソリン・灯油など引火性液体を扱うための国家資格。ガソリンスタンド・工場・ビルメンテナンスなど求人が多く、受験者数は全資格でもトップクラス。都道府県ごとに年複数回実施されており、居住地以外の都道府県でも受験できます。",
   "seoTitle": "危険物乙4 2026年度 都道府県別の試験日程カレンダー｜申込締切の調べ方",
@@ -14,7 +14,8 @@
   "sessions": [],
   "affiliate": { "label": "オンスク.JPで危険物乙4を学ぶ(月額定額)", "url": "https://px.a8.net/svt/ejp?a8mat=4B8B4T+C9681E+408S+5YRHE", "note": "A8.net経由・オンスク.JP(オンラインスクール)・2026-07-28提携承認" },
   "sources": [
-    { "url": "https://www.shoubo-shiken.or.jp/", "note": "公式(消防試験研究センター)" }
+    { "url": "https://www.shoubo-shiken.or.jp/", "note": "公式(消防試験研究センター)" },
+    { "url": "https://www.shoubo-shiken.or.jp/news/2021/01/post-92.html", "note": "公式(消防試験研究センター 試験手数料一覧)" }
   ],
-  "lastVerified": "2026-08-17"
+  "lastVerified": "2026-09-10"
 }

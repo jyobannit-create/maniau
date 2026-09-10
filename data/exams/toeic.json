@@ -12,13 +12,6 @@
   "seoDescription": "TOEIC L&R公開テスト2026年度の各回の申込締切を、IIBCの公式年間日程をもとに毎週更新しています。締切は試験日の約1か月半前と早く、午前・午後の2回実施。各回の締切までの残り日数を一覧で確認できます。公式の申込ページへはこのページからワンクリックで移動できます。",
   "sessions": [
     {
-      "label": "2026年9月5日(土)実施回",
-      "examDate": "2026-09-05",
-      "applications": [
-        { "method": "インターネット申込", "start": "2026-06-04", "end": "2026-07-29", "endTime": "15:00" }
-      ]
-    },
-    {
       "label": "2026年9月27日(日)実施回",
       "examDate": "2026-09-27",
       "applications": [
@@ -58,5 +51,5 @@
   "sources": [
     { "url": "https://www.iibc-global.org/toeic/test/lr/guide01/schedule.html", "note": "公式(IIBC 年間テスト日程)" }
   ],
-  "lastVerified": "2026-08-17"
+  "lastVerified": "2026-09-10"
 }
