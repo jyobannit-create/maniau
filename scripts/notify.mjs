@@ -1,12 +1,18 @@
-// 無人ジョブの実行結果を macOS の通知センターに表示する。
+// 無人ジョブの実行結果を macOS の通知センターと(設定時は)Gmail に知らせる。
 // 使い方: node scripts/notify.mjs <ジョブ名> [終了コード] [ログファイル]
 //   例: node scripts/notify.mjs update-exams "$rc" reports/cron.log
 //
-// 依存ゼロ(Node標準の child_process のみ)。osascript は macOS 標準。
-// 通知が出ない場合は「システム設定 > 通知 > スクリプトエディタ(osascript)」を許可する。
+// 依存ゼロ(Node標準 + macOS標準の osascript / curl)。
+//
+// macOS通知が出ない場合は「システム設定 > 通知 > スクリプトエディタ」を許可する。
+// メール通知(任意): ~/.config/maniau/gmail-notify に1行
+//     you@gmail.com 16桁のアプリパスワード
+//   を書くと、通知に加えて自分宛にメールを送る(Gmailの2段階認証+アプリパスワードが必要)。
 
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
+import { homedir } from "node:os";
+import path from "node:path";
 
 const job = process.argv[2] || "maniau";
 const exitCode = process.argv[3] ?? "";
@@ -35,28 +41,71 @@ if (logFile) {
 
 let headline;
 let sound = "";
+let ok = true;
 if (exitCode !== "" && exitCode !== "0" && exitCode !== "2") {
   headline = `❌ 失敗 (code ${exitCode})`;
   sound = "Basso";
+  ok = false;
 } else if (exitCode === "2") {
   headline = "⚠️ 重大な順位下落を検出";
   sound = "Basso";
+  ok = false;
 } else if (ahead > 0) {
   headline = `⚠️ 未pushのコミット ${ahead}件`;
   sound = "Basso";
+  ok = false;
 } else if (dirty && branch === "main") {
   headline = "⚠️ 未コミットの変更あり";
   sound = "Basso";
+  ok = false;
 } else {
   headline = "✅ 完了";
 }
 
-const body = [headline, `${branch}: ${lastCommit}`, tail && `— ${tail}`].filter(Boolean).join("\n").slice(0, 240);
-const script = `display notification ${JSON.stringify(body)} with title ${JSON.stringify(`マニアウ ${job}`)}${sound ? ` sound name ${JSON.stringify(sound)}` : ""}`;
+const body = [headline, `${branch}: ${lastCommit}`, tail && `— ${tail}`].filter(Boolean).join("\n");
 
+// ── macOS 通知 ──
+const script = `display notification ${JSON.stringify(body.slice(0, 240))} with title ${JSON.stringify(`マニアウ ${job}`)}${sound ? ` sound name ${JSON.stringify(sound)}` : ""}`;
 try {
   execFileSync("osascript", ["-e", script]);
 } catch (e) {
   console.error(`[notify] osascript 失敗: ${e.message}`);
 }
+
+// ── メール通知(任意) ──
+try {
+  const conf = readFileSync(path.join(homedir(), ".config", "maniau", "gmail-notify"), "utf8").trim();
+  const [addr, ...pwParts] = conf.split(/\s+/);
+  const appPw = pwParts.join("");
+  if (addr && appPw) {
+    const mail =
+      [
+        `From: マニアウ自動運用 <${addr}>`,
+        `To: ${addr}`,
+        `Subject: [マニアウ ${job}] ${ok ? "OK" : "要確認"} — ${headline}`,
+        "Content-Type: text/plain; charset=UTF-8",
+        "MIME-Version: 1.0",
+        "",
+        body,
+        "",
+        `(このメールは launchd ジョブ com.maniau.${job} が自動送信しています)`,
+      ].join("\r\n") + "\r\n";
+    execFileSync(
+      "curl",
+      [
+        "--silent", "--show-error", "--ssl-reqd",
+        "--url", "smtps://smtp.gmail.com:465",
+        "--user", `${addr}:${appPw}`,
+        "--mail-from", addr,
+        "--mail-rcpt", addr,
+        "--upload-file", "-",
+      ],
+      { input: mail }
+    );
+    console.log(`[notify] メール送信: ${addr}`);
+  }
+} catch (e) {
+  if (e.code !== "ENOENT") console.error(`[notify] メール送信失敗: ${e.message}`);
+}
+
 console.log(`[notify] ${job}: ${headline} | ${branch}: ${lastCommit}`);
