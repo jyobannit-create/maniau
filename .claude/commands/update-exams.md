@@ -28,7 +28,9 @@ allowed-tools: Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch
 node scripts/check.mjs && node scripts/build.mjs
 ```
 - check.mjs がエラーを出したら修正してから進む。警告(lastVerified の経過日数など)は対象を優先確認する
-- 問題なければ git add → commit(変更内容を要約したメッセージ)→ push。GitHub Actions が自動でデプロイする
+- 問題なければ git add → commit(変更内容を要約したメッセージ)→ **push まで実行する**。GitHub Actions が自動でデプロイする
+  - このコマンドは無人実行(launchd)を前提とする。check.mjs が通っていれば push の可否を人間に質問せず、そのまま `git push` すること(質問して止まると週次更新が反映されない)。data/ と reports/ 以外は変更しないので影響範囲は限定的
+  - check.mjs がどうしても通らない等で push できない場合のみ、コミットを残して reports/ に理由を書いて終了する
 
 ### 5. レポート
 `reports/YYYY-MM-DD.md` に以下を記録する:
