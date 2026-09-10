@@ -65,6 +65,16 @@ for (const f of files) {
     }
   }
 
+  for (const key of ["seoTitle", "seoDescription"]) {
+    if (key in exam && (typeof exam[key] !== "string" || !exam[key].trim())) {
+      errors.push(ctx(`"${key}" は空でない文字列にしてください`));
+    }
+  }
+  // seoTitle は鮮度シグナルとして年度(西暦)を含める運用。含まれない場合は見直しを促す
+  if (exam.seoTitle && !/20\d{2}/.test(exam.seoTitle)) {
+    warns.push(ctx("seoTitle に年度(西暦)が含まれていません — 年度更新時に見直してください"));
+  }
+
   if (!exam.sources || exam.sources.length === 0) errors.push(ctx("sources がありません(一次情報のURL必須)"));
   if (!isDate(exam.lastVerified)) {
     errors.push(ctx("lastVerified がありません"));

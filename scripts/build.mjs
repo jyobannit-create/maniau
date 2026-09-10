@@ -222,6 +222,27 @@ document.querySelectorAll("[data-count]").forEach(function(el){
 });
 `;
 
+// jsonLd は単一オブジェクトでも配列でも受け取れる。配列の場合は要素ごとに
+// 個別の <script type="application/ld+json"> として出力する(BreadcrumbList と Event の共存用)
+function renderJsonLd(jsonLd) {
+  const list = Array.isArray(jsonLd) ? jsonLd.filter(Boolean) : jsonLd ? [jsonLd] : [];
+  return list.map((o) => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join("\n");
+}
+
+// パンくず(BreadcrumbList)の JSON-LD を生成する。
+// trail: [{ name, path? }] — path があれば絶対URLの item を付与、無ければ name のみ(未リンクの階層)
+function breadcrumbLd(trail) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: trail.map((t, i) => {
+      const el = { "@type": "ListItem", position: i + 1, name: t.name };
+      if (t.path) el.item = `${BASE_URL}${t.path}`;
+      return el;
+    }),
+  };
+}
+
 function page({ title, description, canonicalPath, body, jsonLd, depth = 0 }) {
   const rel = depth === 0 ? "." : Array(depth).fill("..").join("/");
   return `<!DOCTYPE html>
@@ -239,7 +260,7 @@ function page({ title, description, canonicalPath, body, jsonLd, depth = 0 }) {
 <meta property="og:url" content="${BASE_URL}${canonicalPath}">
 <meta property="og:site_name" content="${esc(SITE_NAME)}">
 <link rel="stylesheet" href="${rel}/style.css">
-${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` : ""}
+${renderJsonLd(jsonLd)}
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -393,9 +414,18 @@ function firstSentence(s, max = 100) {
 // 実測クエリ(GSC)はフルネームでの流入が確認されているため、文字数に余裕があるのに
 // 一律shortNameへ倒すと完全一致・太字ハイライトのメリットを失う。詳細はreports参照
 function buildExamMeta(exam, c) {
-  const full = composeMeta(exam.name, exam, c);
-  if (charWidth(full.title) <= TITLE_WIDTH_BUDGET || !exam.shortName) return full;
-  return composeMeta(exam.shortName, exam, c);
+  // data/exams/*.json に seoTitle / seoDescription があれば最優先で使う(SEO改修用の任意上書き)。
+  // これらは state(open/closed/upcoming…)に依存しない「情報の一覧ページ」としての表現で書くこと。
+  // 具体的な締切日・試験日は入れないため、日付が経過して state が変わっても不整合が起きない。
+  const auto = (() => {
+    const full = composeMeta(exam.name, exam, c);
+    if (charWidth(full.title) <= TITLE_WIDTH_BUDGET || !exam.shortName) return full;
+    return composeMeta(exam.shortName, exam, c);
+  })();
+  return {
+    title: exam.seoTitle ? `${exam.seoTitle} | ${SITE_NAME}` : auto.title,
+    description: exam.seoDescription || auto.description,
+  };
 }
 
 // classify()が返すstateに応じてtitle/descriptionを組み立てる
@@ -550,7 +580,7 @@ function renderExam(exam) {
     ? `<div class="cta"><a href="${esc(exam.affiliate.url)}" rel="sponsored nofollow">${esc(exam.affiliate.label || "対策講座を見る")}</a></div><p class="cta-note">※ 上記は提携先(広告)リンクです</p>`
     : `<div class="cta"><a href="${esc(exam.officialUrl)}" rel="noopener" target="_blank">公式サイトで申込方法を確認する</a></div>`;
 
-  const jsonLd = sessions.filter((s) => s.examDate).map((s) => ({
+  const events = sessions.filter((s) => s.examDate).map((s) => ({
     "@context": "https://schema.org",
     "@type": "Event",
     name: `${exam.name} ${s.label}`,
@@ -559,6 +589,15 @@ function renderExam(exam) {
     location: { "@type": "Place", name: "全国の試験会場", address: { "@type": "PostalAddress", addressCountry: "JP" } },
     organizer: { "@type": "Organization", name: exam.organizer, url: exam.officialUrl },
   }));
+
+  // パンくず: トップ > カテゴリ > 資格名。カテゴリは単独ページが未整備のため未リンク(name のみ)で出力し、
+  // 可視パンくず(nav.crumb: マニアウ のみリンク)と一致させる
+  const breadcrumb = breadcrumbLd([
+    { name: SITE_NAME, path: "/" },
+    { name: exam.category },
+    { name: exam.name, path: `/exams/${exam.slug}/` },
+  ]);
+  const jsonLd = [breadcrumb, ...events];
 
   const body = `
 <div class="wrap">
@@ -592,7 +631,7 @@ function renderExam(exam) {
     description: meta.description,
     canonicalPath: `/exams/${exam.slug}/`,
     body,
-    jsonLd: jsonLd.length === 1 ? jsonLd[0] : jsonLd.length ? jsonLd : null,
+    jsonLd,
     depth: 2,
   });
 }
@@ -647,6 +686,10 @@ function renderStaticPage(p) {
     description: p.description,
     canonicalPath: `/${p.slug}/`,
     body: `<div class="wrap"><nav class="crumb"><a href="../">${esc(SITE_NAME)}</a> › ${esc(p.title)}</nav><article class="exam">${p.body}</article></div>`,
+    jsonLd: breadcrumbLd([
+      { name: SITE_NAME, path: "/" },
+      { name: p.title, path: `/${p.slug}/` },
+    ]),
     depth: 1,
   });
 }
