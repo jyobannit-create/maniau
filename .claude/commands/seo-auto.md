@@ -16,6 +16,11 @@ allowed-tools: Read, Write, Edit, Bash, Glob, Grep, WebFetch, WebSearch, Task
 5. `reports/seo-annotations.ndjson` と `reports/YYYY-MM-DD-seo.md` に記録 → ブランチにcommit
 6. `git push -u origin seo/auto-YYYY-MM-DD` → `gh pr create`(要約・diff要点・検証結果・目視確認チェックリスト・要人間判断リストを本文に)
 
+## 無人実行の前提
+
+このコマンドは launchd から `claude -p` で無人実行される。`seo/auto-*` ブランチへの commit / push / `gh pr create` は
+人間に可否を質問せずそのまま実行すること(質問で止まると月次レビューが機能しない)。main には触れないので影響は限定的。
+
 ## 絶対にやらないこと
 
 - main への commit / push / マージ
