@@ -17,12 +17,14 @@
         { "method": "通常受験申込", "start": "2026-09-03", "end": "2026-10-13" },
         { "method": "筆記試験免除受験申込", "start": "2026-08-24", "end": "2026-09-11" }
       ],
-      "applicationNote": "2級・3級はCBT方式でも随時受験可能(申込期間の詳細は公式サイトで確認)"
+      "applicationNote": "2級・3級はCBT方式でも随時受験可能。申込はインターネットのみで随時受付(申込日から3日目以降の予約が可能)、実施は年末年始を除き随時。CBT受験料: 2級4,900円・3級3,600円(いずれもCBT事務手数料800円込み・税込)"
     }
   ],
   "sources": [
     { "url": "https://jitsumu-ginou-kentei.jp/HS/acceptance", "note": "公式(実務技能検定協会 秘書検定 申込期間)" },
-    { "url": "https://jitsumu-ginou-kentei.jp/HS/guide", "note": "公式(実務技能検定協会 秘書検定 受験要項・検定料)" }
+    { "url": "https://jitsumu-ginou-kentei.jp/HS/guide", "note": "公式(実務技能検定協会 秘書検定 受験要項・検定料)" },
+    { "url": "https://jitsumu-ginou-kentei.jp/HS/cbt", "note": "公式(実務技能検定協会 秘書検定CBT案内)" },
+    { "url": "https://cbt-s.com/examinee/examination/hisyokentei.html", "note": "CBT-Solutions(秘書検定CBT申込・詳細/公式案内先)" }
   ],
-  "lastVerified": "2026-09-10"
+  "lastVerified": "2026-09-14"
 }
