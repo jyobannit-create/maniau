@@ -8,11 +8,12 @@
   "fee": "7,500円",
   "examType": "cbt",
   "description": "ITエンジニアの登竜門と呼ばれる国家試験。CBT方式で通年実施されているため、思い立ったタイミングで受験日を予約できます。「いつでも受けられる」がゆえに先延ばしにしがちな試験の代表格。先に受験日を決めてから逆算して勉強するのが合格の近道です。",
-  "cbtNote": "全国のテストセンターで通年実施。希望する会場・日時を選んで申込。",
+  "cbtNote": "全国のテストセンターで通年実施。希望する会場・日時を選んで申込。システムリプレースに伴い2026年12月28日以降は試験休止予定(会場により休止時期が早まる場合あり)。2026年9月28日以降の新規申込は2026年12月27日までの試験日のみ選択可。",
   "sessions": [],
   "affiliate": { "label": "資格スクエアで基本情報技術者講座を見る", "url": "https://px.a8.net/svt/ejp?a8mat=4B8B4T+BW2OQA+373C+7CX1E", "note": "A8.net経由・資格スクエア・2026-07-28提携承認" },
   "sources": [
-    { "url": "https://www.ipa.go.jp/shiken/mousikomi/schedule.html", "note": "公式(IPA スケジュール)" }
+    { "url": "https://www.ipa.go.jp/shiken/mousikomi/schedule.html", "note": "公式(IPA スケジュール)" },
+    { "url": "https://www.ipa.go.jp/shiken/2026/cbt-202605-jisshi.html", "note": "公式(IPA CBT試験休止・スケジュール変更のお知らせ)" }
   ],
-  "lastVerified": "2026-09-14"
+  "lastVerified": "2026-09-21"
 }

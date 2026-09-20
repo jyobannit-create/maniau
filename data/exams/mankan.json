@@ -23,7 +23,8 @@
   "affiliate": { "label": "LECのマンション管理士講座・書籍を見る", "url": "https://px.a8.net/svt/ejp?a8mat=4B8B4T+BQPSAA+1G62+656YQ", "note": "A8.net経由・LECオンライン(東京リーガルマインド)・2026-07-28提携承認" },
   "sources": [
     { "url": "https://www.mankan.org/", "note": "公式(マンション管理センター)" },
+    { "url": "https://www.mlit.go.jp/report/press/content/002003936.pdf", "note": "公式(国土交通省 報道発表・令和8年度マンション管理士試験の実施について)" },
     { "url": "https://studying.jp/mankan/about-more/mankan-schedule.html", "note": "スタディング" }
   ],
-  "lastVerified": "2026-09-14"
+  "lastVerified": "2026-09-21"
 }

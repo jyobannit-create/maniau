@@ -8,11 +8,12 @@
   "fee": "7,500円",
   "examType": "cbt",
   "description": "ITを利活用するすべての社会人・学生向けの国家試験。DX時代の基礎教養として、非エンジニアの受験者が年々増えています。CBT方式で通年実施されており、全国の会場から都合の良い日時を選んで受験できます。",
-  "cbtNote": "全国のテストセンターで通年実施。希望する会場・日時を選んで申込。",
+  "cbtNote": "全国のテストセンターで通年実施。希望する会場・日時を選んで申込。システムリプレースに伴い2026年12月28日以降は試験休止予定(会場により休止時期が早まる場合あり)。2026年9月28日以降の新規申込は2026年12月27日までの試験日のみ選択可。",
   "sessions": [],
   "affiliate": { "label": "オンスク.JPでITパスポートを学ぶ(月額定額)", "url": "https://px.a8.net/svt/ejp?a8mat=4B8B4T+C9681E+408S+5YRHE", "note": "A8.net経由・オンスク.JP(オンラインスクール)・2026-07-28提携承認" },
   "sources": [
-    { "url": "https://www3.jitec.ipa.go.jp/JitesCbt/index.html", "note": "公式(ITパスポート試験)" }
+    { "url": "https://www3.jitec.ipa.go.jp/JitesCbt/index.html", "note": "公式(ITパスポート試験)" },
+    { "url": "https://www.ipa.go.jp/shiken/2026/cbt-202605-jisshi.html", "note": "公式(IPA CBT試験休止・スケジュール変更のお知らせ)" }
   ],
-  "lastVerified": "2026-09-14"
+  "lastVerified": "2026-09-21"
 }

@@ -23,7 +23,8 @@
   "affiliate": { "label": "LECの管理業務主任者講座・書籍を見る", "url": "https://px.a8.net/svt/ejp?a8mat=4B8B4T+BQPSAA+1G62+656YQ", "note": "A8.net経由・LECオンライン(東京リーガルマインド)・2026-07-28提携承認" },
   "sources": [
     { "url": "https://www.kanrikyo.or.jp/", "note": "公式(マンション管理業協会)" },
+    { "url": "https://www.kanrikyo.or.jp/kanri/siken.html", "note": "公式(試験情報ページ・申込期間を確認)" },
     { "url": "https://studying.jp/mankan/about-more/kangyou-schedule.html", "note": "スタディング" }
   ],
-  "lastVerified": "2026-09-14"
+  "lastVerified": "2026-09-21"
 }
