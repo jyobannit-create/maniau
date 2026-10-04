@@ -12,13 +12,6 @@
   "seoDescription": "TOEIC L&R公開テスト2026年度の各回の申込締切を、IIBCの公式年間日程をもとに毎週更新しています。締切は試験日の約1か月半前と早く、午前・午後の2回実施。各回の締切までの残り日数を一覧で確認できます。公式の申込ページへはこのページからワンクリックで移動できます。",
   "sessions": [
     {
-      "label": "2026年9月27日(日)実施回",
-      "examDate": "2026-09-27",
-      "applications": [
-        { "method": "インターネット申込", "start": "2026-07-14", "end": "2026-08-14", "endTime": "15:00" }
-      ]
-    },
-    {
       "label": "2026年10月25日(日)実施回",
       "examDate": "2026-10-25",
       "applications": [
@@ -45,11 +38,46 @@
       "applications": [
         { "method": "インターネット申込", "start": "2026-10-06", "end": "2026-11-11", "endTime": "15:00" }
       ]
+    },
+    {
+      "label": "2027年1月10日(日)実施回",
+      "examDate": "2027-01-10",
+      "applications": [
+        { "method": "インターネット申込", "start": "2026-10-27", "end": "2026-11-26", "endTime": "15:00" }
+      ]
+    },
+    {
+      "label": "2027年1月24日(日)実施回",
+      "examDate": "2027-01-24",
+      "applications": [
+        { "method": "インターネット申込", "start": "2026-11-11", "end": "2026-12-09", "endTime": "15:00" }
+      ]
+    },
+    {
+      "label": "2027年2月14日(日)実施回",
+      "examDate": "2027-02-14",
+      "applications": [
+        { "method": "インターネット申込", "start": "2026-11-27", "end": "2027-01-07", "endTime": "15:00" }
+      ]
+    },
+    {
+      "label": "2027年3月6日(土)実施回",
+      "examDate": "2027-03-06",
+      "applications": [
+        { "method": "インターネット申込", "start": "2026-12-10", "end": "2027-01-27", "endTime": "15:00" }
+      ]
+    },
+    {
+      "label": "2027年3月14日(日)実施回",
+      "examDate": "2027-03-14",
+      "applications": [
+        { "method": "インターネット申込", "start": "2027-01-06", "end": "2027-02-03", "endTime": "15:00" }
+      ]
     }
   ],
   "affiliate": { "label": "資格スクエアでTOEICスコアアップ講座を見る", "url": "https://px.a8.net/svt/ejp?a8mat=4B8B4T+BW2OQA+373C+7CX1E", "note": "A8.net経由・資格スクエア(TOEIC L&Rテストレベル別スコアアップ講座)・2026-07-28提携承認" },
   "sources": [
     { "url": "https://www.iibc-global.org/toeic/test/lr/guide01/schedule.html", "note": "公式(IIBC 年間テスト日程)" }
   ],
-  "lastVerified": "2026-09-21"
+  "lastVerified": "2026-10-05"
 }
