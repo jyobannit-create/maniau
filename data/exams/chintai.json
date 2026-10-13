@@ -15,7 +15,8 @@
       "applications": [
         { "method": "WEB申込", "start": "2026-08-03", "end": "2026-09-30", "endTime": "23:59" },
         { "method": "郵送申込", "start": "2026-08-03", "end": "2026-09-24", "note": "当日消印有効" }
-      ]
+      ],
+      "resultDate": "2026-12-24"
     }
   ],
   "affiliate": { "label": "LECの賃貸不動産経営管理士講座・書籍を見る", "url": "https://px.a8.net/svt/ejp?a8mat=4B8B4T+BQPSAA+1G62+656YQ", "note": "A8.net経由・LECオンライン(東京リーガルマインド)・2026-07-28提携承認" },
@@ -24,5 +25,5 @@
     { "url": "https://www.chintaikanrishi.jp/exam/entry", "note": "公式(令和8年度受験申込案内・受験手数料)" },
     { "url": "https://studying.jp/chintaikanrishi/about-more/schedule.html", "note": "スタディング" }
   ],
-  "lastVerified": "2026-10-05"
+  "lastVerified": "2026-10-13"
 }

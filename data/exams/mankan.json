@@ -17,7 +17,8 @@
       "applications": [
         { "method": "インターネット申込", "start": "2026-08-03", "end": "2026-09-30", "endTime": "16:00" },
         { "method": "郵送申込", "start": "2026-08-03", "end": "2026-08-31", "note": "消印有効" }
-      ]
+      ],
+      "resultDate": "2027-01-08"
     }
   ],
   "affiliate": { "label": "LECのマンション管理士講座・書籍を見る", "url": "https://px.a8.net/svt/ejp?a8mat=4B8B4T+BQPSAA+1G62+656YQ", "note": "A8.net経由・LECオンライン(東京リーガルマインド)・2026-07-28提携承認" },
@@ -26,5 +27,5 @@
     { "url": "https://www.mlit.go.jp/report/press/content/002003936.pdf", "note": "公式(国土交通省 報道発表・令和8年度マンション管理士試験の実施について)" },
     { "url": "https://studying.jp/mankan/about-more/mankan-schedule.html", "note": "スタディング" }
   ],
-  "lastVerified": "2026-10-05"
+  "lastVerified": "2026-10-13"
 }
