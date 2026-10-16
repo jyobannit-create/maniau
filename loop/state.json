@@ -14,37 +14,37 @@
     {
       "rank": 2,
       "slug": "kihon-joho",
-      "reason": "titleLint: 「試験日」系クエリが計65表示あるが title/description に無い"
+      "reason": "titleLint: 「試験日」系クエリが計101表示あるが title/description に無い"
     },
     {
       "rank": 3,
       "slug": "shikisai",
-      "reason": "CTR機会(5.8位・表示1395・逃し46click/90d)"
+      "reason": "CTR機会(5.9位・表示1429・逃し45click/90d)"
     },
     {
       "rank": 3,
       "slug": "kikenbutsu",
-      "reason": "CTR機会(9.3位・表示1343・逃し28click/90d)"
+      "reason": "CTR機会(9.3位・表示1637・逃し35click/90d)"
     },
     {
       "rank": 3,
       "slug": "fp1",
-      "reason": "CTR機会(9.6位・表示882・逃し18click/90d)"
+      "reason": "CTR機会(9.5位・表示911・逃し18click/90d)"
     },
     {
       "rank": 4,
       "slug": "toeic",
-      "reason": "11〜20位で表示多(12.8位・表示1451)"
+      "reason": "11〜20位で表示多(12.3位・表示1576)"
     },
     {
       "rank": 4,
       "slug": "kangyo",
-      "reason": "11〜20位で表示多(13.3位・表示1223)"
+      "reason": "11〜20位で表示多(13.2位・表示1245)"
     },
     {
       "rank": 4,
       "slug": "boki",
-      "reason": "11〜20位で表示多(14.2位・表示109)"
+      "reason": "11〜20位で表示多(13.9位・表示111)"
     },
     {
       "rank": 4,
@@ -54,22 +54,22 @@
     {
       "rank": 4,
       "slug": "e-shiken",
-      "reason": "11〜20位で表示多(13.5位・表示538)"
+      "reason": "11〜20位で表示多(13.3位・表示554)"
     },
     {
       "rank": 4,
       "slug": "mankan",
-      "reason": "11〜20位で表示多(16.2位・表示763)"
+      "reason": "11〜20位で表示多(16.3位・表示770)"
     },
     {
       "rank": 4,
       "slug": "oyo-joho",
-      "reason": "11〜20位で表示多(16.0位・表示791)"
+      "reason": "11〜20位で表示多(16.2位・表示798)"
     },
     {
       "rank": 4,
       "slug": "fp",
-      "reason": "11〜20位で表示多(12.8位・表示187)"
+      "reason": "11〜20位で表示多(12.8位・表示192)"
     },
     {
       "rank": 4,

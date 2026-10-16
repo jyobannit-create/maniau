@@ -35,8 +35,8 @@
 
 | 優先 | 対象 | 理由 |
 |---|---|---|
-| 2 | kihon-joho | titleLint: 「試験日」系クエリが計65表示あるが title/description に無い |
-| 3 | shikisai | CTR機会(5.8位・表示1395・逃し46click/90d) |
-| 3 | kikenbutsu | CTR機会(9.3位・表示1343・逃し28click/90d) |
-| 3 | fp1 | CTR機会(9.6位・表示882・逃し18click/90d) |
-| 4 | toeic | 11〜20位で表示多(12.8位・表示1451) |
+| 2 | kihon-joho | titleLint: 「試験日」系クエリが計101表示あるが title/description に無い |
+| 3 | shikisai | CTR機会(5.9位・表示1429・逃し45click/90d) |
+| 3 | kikenbutsu | CTR機会(9.3位・表示1637・逃し35click/90d) |
+| 3 | fp1 | CTR機会(9.5位・表示911・逃し18click/90d) |
+| 4 | toeic | 11〜20位で表示多(12.3位・表示1576) |
