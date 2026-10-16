@@ -155,3 +155,16 @@ plist が `export CLAUDE_CODE_OAUTH_TOKEN="$(cat ~/.config/maniau/claude-token)"
 
 - サービスアカウント鍵は `.gitignore` で二重にガードしているが、**絶対にコミットしない**
 - `--auto` が触るのは常に `seo/auto-*` ブランチだけ。main への push 権限があっても main は触らない設計
+
+---
+
+# SEOループ(seo-loop・Claude Code Routine)
+
+2026-10-16 設計・実装。上記「SEO改善サイクル」の gsc-scan / seo-auto を置き換える、クラウド実行のループ型自動化。
+**毎週火曜 6:00 JST に GSC 実測をもとに既存ページへ改善を1件だけ打って main へ自動公開し、21日後に答え合わせする。**
+
+- 設計書: `loop/DESIGN.md` / 実行手順: `loop/ROUTINE.md`(Routine のプロンプトは「`loop/ROUTINE.md` を読み、その手順どおりに実行する」の1行)
+- 記憶: `loop/progress.md`(進捗)・`loop/handover.md`(学習ルール)・`loop/metrics.md`(自動生成の計測表)・`loop/facts.md`(書いてよい事実)・`loop/state.json`(機械可読の正データ)
+- update-exams(月曜・ローカル)とは曜日とフィールドで分担。ループは日程系フィールドに触れない
+- 失敗時のみ Gmail コネクタで自分宛に通知
+- クラウド側の設定(環境変数 `MANIAU_GSC_SA_KEY_B64`・ネットワーク許可・main への push 許可・Gmail コネクタ)は `loop/DESIGN.md` §9

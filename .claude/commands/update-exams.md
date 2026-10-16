@@ -43,3 +43,4 @@ node scripts/check.mjs && node scripts/build.mjs
 - 公式で確認できない日付の記入・推測での補完
 - デザイン・レイアウトの変更(このコマンドの責務はデータ更新のみ)
 - check.mjs のエラーを残したままの push
+- SEO系フィールド(`seoTitle` / `seoDescription` / `description` / `faq` / `relatedSlugs`)と `loop/` 配下の編集(これらは seo-loop の担当。loop/DESIGN.md §3)

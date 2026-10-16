@@ -1,0 +1,90 @@
+{
+  "kpi": [
+    {
+      "start": "2026-10-07",
+      "end": "2026-10-13",
+      "clicks": 4,
+      "impressions": 1215,
+      "ctr": 0.0033,
+      "position": 10.1
+    }
+  ],
+  "actions": [],
+  "queue": [
+    {
+      "rank": 2,
+      "slug": "kihon-joho",
+      "reason": "titleLint: 「試験日」系クエリが計65表示あるが title/description に無い"
+    },
+    {
+      "rank": 3,
+      "slug": "shikisai",
+      "reason": "CTR機会(5.8位・表示1395・逃し46click/90d)"
+    },
+    {
+      "rank": 3,
+      "slug": "kikenbutsu",
+      "reason": "CTR機会(9.3位・表示1343・逃し28click/90d)"
+    },
+    {
+      "rank": 3,
+      "slug": "fp1",
+      "reason": "CTR機会(9.6位・表示882・逃し18click/90d)"
+    },
+    {
+      "rank": 4,
+      "slug": "toeic",
+      "reason": "11〜20位で表示多(12.8位・表示1451)"
+    },
+    {
+      "rank": 4,
+      "slug": "kangyo",
+      "reason": "11〜20位で表示多(13.3位・表示1223)"
+    },
+    {
+      "rank": 4,
+      "slug": "boki",
+      "reason": "11〜20位で表示多(14.2位・表示109)"
+    },
+    {
+      "rank": 4,
+      "slug": "chintai",
+      "reason": "11〜20位で表示多(14.8位・表示131)"
+    },
+    {
+      "rank": 4,
+      "slug": "e-shiken",
+      "reason": "11〜20位で表示多(13.5位・表示538)"
+    },
+    {
+      "rank": 4,
+      "slug": "mankan",
+      "reason": "11〜20位で表示多(16.2位・表示763)"
+    },
+    {
+      "rank": 4,
+      "slug": "oyo-joho",
+      "reason": "11〜20位で表示多(16.0位・表示791)"
+    },
+    {
+      "rank": 4,
+      "slug": "fp",
+      "reason": "11〜20位で表示多(12.8位・表示187)"
+    },
+    {
+      "rank": 4,
+      "slug": "gyoseishoshi",
+      "reason": "11〜20位で表示多(17.7位・表示506)"
+    },
+    {
+      "rank": 5,
+      "slug": "hoikushi",
+      "reason": "コンテンツギャップ「保育士 試験 後期 申し込み」(29.1位・表示32)"
+    },
+    {
+      "rank": 5,
+      "slug": "eisei-kanri",
+      "reason": "コンテンツギャップ「第二種衛生管理者 試験日」(33.0位・表示25)"
+    }
+  ]
+}

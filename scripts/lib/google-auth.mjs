@@ -1,7 +1,8 @@
 // サービスアカウント(JSON鍵)から Google API のアクセストークンを取得する。
 // 依存パッケージゼロ — Node標準の crypto / fetch のみで JWT(RS256) を組み立てて署名する。
 //
-// 鍵ファイルはリポジトリに絶対に置かないこと。既定の探索場所:
+// 鍵ファイルはリポジトリに絶対に置かないこと。探索順:
+//   0. 環境変数 MANIAU_GSC_SA_KEY_B64(鍵JSONをbase64化した中身。クラウドのRoutine用)
 //   1. 環境変数 MANIAU_GSC_SA_KEY が指すパス
 //   2. ~/.config/maniau/gsc-sa.json
 //
@@ -33,14 +34,16 @@ export function resolveKeyPath(explicit) {
  * @returns {Promise<{accessToken:string, expiresAt:number, clientEmail:string}>}
  */
 export async function getAccessToken({ keyPath, scope = "https://www.googleapis.com/auth/webmasters.readonly" } = {}) {
-  const resolved = resolveKeyPath(keyPath);
+  const fromEnv = !keyPath && process.env.MANIAU_GSC_SA_KEY_B64;
+  const resolved = fromEnv ? "$MANIAU_GSC_SA_KEY_B64" : resolveKeyPath(keyPath);
   let key;
   try {
-    key = JSON.parse(await readFile(resolved, "utf8"));
+    const raw = fromEnv ? Buffer.from(process.env.MANIAU_GSC_SA_KEY_B64, "base64").toString("utf8") : await readFile(resolved, "utf8");
+    key = JSON.parse(raw);
   } catch (e) {
     throw new Error(
       `サービスアカウント鍵を読めません: ${resolved}\n` +
-        `  MANIAU_GSC_SA_KEY を設定するか ~/.config/maniau/gsc-sa.json に配置してください。\n` +
+        `  MANIAU_GSC_SA_KEY_B64 / MANIAU_GSC_SA_KEY を設定するか ~/.config/maniau/gsc-sa.json に配置してください。\n` +
         `  (${e.message})`
     );
   }
