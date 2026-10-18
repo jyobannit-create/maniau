@@ -6,24 +6,14 @@
   "organizer": "一般財団法人 不動産適正取引推進機構",
   "officialUrl": "https://www.retio.or.jp/exam/",
   "fee": "8,200円",
-  "examType": "fixed",
+  "examType": "tbd",
+  "tbdNote": "2026年度試験(10/18実施)は終了(合格発表は2026年11月25日予定)。次回(2027年度)の日程は未発表(2026-10-19時点)。例年7月に申込受付・10月第3日曜に試験",
   "description": "不動産取引の専門家であることを証明する国家資格。毎年20万人以上が受験する人気No.1クラスの資格で、不動産業界では事務所ごとに5人に1人以上の設置が義務付けられています。試験は年1回のみ。申込期間は7月の1ヶ月間だけと短いため、申込忘れが最も多い資格のひとつです。",
-  "sessions": [
-    {
-      "label": "2026年度(令和8年度)試験",
-      "examDate": "2026-10-18",
-      "examNote": "13:00〜15:00(登録講習修了者は13:10〜)",
-      "applications": [
-        { "method": "インターネット申込", "start": "2026-07-01", "end": "2026-07-31", "endTime": "23:59" },
-        { "method": "郵送申込", "start": "2026-07-01", "end": "2026-07-15", "note": "簡易書留のみ有効" }
-      ],
-      "resultDate": "2026-11-25"
-    }
-  ],
+  "sessions": [],
   "affiliate": { "label": "四谷学院の宅建講座を見る(資料請求無料)", "url": "https://px.a8.net/svt/ejp?a8mat=4B8B4T+CKHGJ6+5IEI+5YJRM", "note": "A8.net経由・四谷学院通信講座・2026-07-28提携承認" },
   "sources": [
     { "url": "https://www.retio.or.jp/exam/schedule/", "note": "公式(不動産適正取引推進機構)" },
     { "url": "https://www.tac-school.co.jp/kouza_takken/takken_sk_schedule.html", "note": "TAC" }
   ],
-  "lastVerified": "2026-10-13"
+  "lastVerified": "2026-10-19"
 }

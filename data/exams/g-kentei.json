@@ -43,6 +43,30 @@
       "applications": [
         { "method": "個人申込", "start": "2027-03-12", "end": "2027-04-27" }
       ]
+    },
+    {
+      "label": "2027年 第4回",
+      "examDate": "2027-07-02",
+      "examNote": "オンライン試験: 2027/7/2(金)16:00〜 または 7/3(土)13:00〜 のいずれか選択。会場試験の実施なし",
+      "applications": [
+        { "method": "個人申込", "start": "2027-05-14", "end": "2027-06-24" }
+      ]
+    },
+    {
+      "label": "2027年 第5回",
+      "examDate": "2027-09-03",
+      "examNote": "オンライン試験: 2027/9/4(土)13:00〜 / 会場試験: 9/3(金)〜9/5(日)の3日間開催",
+      "applications": [
+        { "method": "個人申込", "start": "2027-07-09", "end": "2027-08-27" }
+      ]
+    },
+    {
+      "label": "2027年 第6回",
+      "examDate": "2027-11-05",
+      "examNote": "オンライン試験: 2027/11/5(金)16:00〜 または 11/6(土)13:00〜 のいずれか選択。会場試験の実施なし",
+      "applications": [
+        { "method": "個人申込", "start": "2027-09-10", "end": "2027-10-28" }
+      ]
     }
   ],
   "affiliate": { "label": "楽天市場でG検定の参考書を探す", "url": "https://af.moshimo.com/af/c/click?a_id=5706858&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FG%25E6%25A4%259C%25E5%25AE%259A%2B%25E3%2583%2586%25E3%2582%25AD%25E3%2582%25B9%25E3%2583%2588%2F", "note": "もしもアフィリエイト経由・楽天市場(参考書検索)・2026-07-27設定。講座提携(アガルート等)は実績蓄積後に再申請予定" },
@@ -50,5 +74,5 @@
     { "url": "https://www.jdla.org/certificate/general/", "note": "公式(JDLA G検定 2026年第6回日程)" },
     { "url": "https://www.jdla.org/news/20260911002/", "note": "公式(JDLA 2027年G検定試験日程)" }
   ],
-  "lastVerified": "2026-10-13"
+  "lastVerified": "2026-10-19"
 }

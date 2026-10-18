@@ -17,14 +17,17 @@
       "applications": [
         { "method": "Web申込", "start": "2026-08-03", "end": "2026-09-30", "endTime": "16:59" },
         { "method": "郵送申込", "start": "2026-08-03", "end": "2026-08-24", "note": "当日消印有効" }
-      ]
+      ],
+      "resultDate": "2027-01-15"
     }
   ],
   "affiliate": { "label": "LECの管理業務主任者講座・書籍を見る", "url": "https://px.a8.net/svt/ejp?a8mat=4B8B4T+BQPSAA+1G62+656YQ", "note": "A8.net経由・LECオンライン(東京リーガルマインド)・2026-07-28提携承認" },
   "sources": [
     { "url": "https://www.kanrikyo.or.jp/", "note": "公式(マンション管理業協会)" },
     { "url": "https://www.kanrikyo.or.jp/kanri/siken.html", "note": "公式(試験情報ページ・申込期間を確認)" },
+    { "url": "https://www.kanrikyo.or.jp/kanri/shiken_r08/shiken_detail_20260605.html", "note": "公式(令和8年度試験詳細・合格発表日を確認)" },
+    { "url": "https://www.kanrikyo.or.jp/kanri/shiken_r08/pdf/gaiyou.pdf", "note": "公式(令和8年度実施要領PDF)" },
     { "url": "https://studying.jp/mankan/about-more/kangyou-schedule.html", "note": "スタディング" }
   ],
-  "lastVerified": "2026-10-13"
+  "lastVerified": "2026-10-19"
 }
