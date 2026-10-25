@@ -15,7 +15,7 @@
       "label": "2026年度 前期試験(CBT方式)",
       "examNote": "科目A試験: 10/28(水)〜11/10(火) / 科目B試験: 11/24(火)〜12/6(日) の各期間から選択",
       "applications": [
-        { "method": "申込受付", "start": "2026-10-06", "end": "2026-11-07" }
+        { "method": "申込受付", "start": "2026-10-06", "end": "2026-11-07", "endTime": "17:00" }
       ]
     },
     {
@@ -31,5 +31,5 @@
     { "url": "https://www.ipa.go.jp/shiken/2026/ap_koudo_sc_yotei.html", "note": "公式(IPA 令和8年度実施予定)" },
     { "url": "https://www.ipa.go.jp/shiken/2026/ap_koudo_sc_kikan.html", "note": "公式(IPA 申込受付期間・試験実施期間)" }
   ],
-  "lastVerified": "2026-10-19"
+  "lastVerified": "2026-10-26"
 }
