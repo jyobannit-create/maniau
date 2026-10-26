@@ -15,6 +15,14 @@
       "impressions": 1105,
       "ctr": 0.0036,
       "position": 9.73
+    },
+    {
+      "start": "2026-10-17",
+      "end": "2026-10-23",
+      "clicks": 1,
+      "impressions": 684,
+      "ctr": 0.0015,
+      "position": 14.7
     }
   ],
   "actions": [],
@@ -22,62 +30,62 @@
     {
       "rank": 2,
       "slug": "kihon-joho",
-      "reason": "titleLint: 「試験日」系クエリが計129表示あるが title/description に無い"
+      "reason": "titleLint: 「試験日」系クエリが計161表示あるが title/description に無い"
     },
     {
       "rank": 3,
       "slug": "shikisai",
-      "reason": "CTR機会(5.9位・表示1448・逃し46click/90d)"
+      "reason": "CTR機会(5.8位・表示1517・逃し49click/90d)"
     },
     {
       "rank": 3,
       "slug": "kikenbutsu",
-      "reason": "CTR機会(9.3位・表示1691・逃し36click/90d)"
+      "reason": "CTR機会(9.3位・表示1742・逃し37click/90d)"
     },
     {
       "rank": 3,
       "slug": "fp1",
-      "reason": "CTR機会(9.5位・表示926・逃し18click/90d)"
+      "reason": "CTR機会(9.6位・表示975・逃し19click/90d)"
     },
     {
       "rank": 4,
       "slug": "kangyo",
-      "reason": "11〜20位で表示多(13.3位・表示1262)"
+      "reason": "11〜20位で表示多(13.1位・表示1351)"
     },
     {
       "rank": 4,
       "slug": "boki",
-      "reason": "11〜20位で表示多(13.9位・表示111)"
+      "reason": "11〜20位で表示多(13.7位・表示115)"
     },
     {
       "rank": 4,
       "slug": "chintai",
-      "reason": "11〜20位で表示多(14.8位・表示131)"
+      "reason": "11〜20位で表示多(14.6位・表示134)"
     },
     {
       "rank": 4,
       "slug": "e-shiken",
-      "reason": "11〜20位で表示多(13.1位・表示568)"
+      "reason": "11〜20位で表示多(13.0位・表示584)"
     },
     {
       "rank": 4,
       "slug": "mankan",
-      "reason": "11〜20位で表示多(16.4位・表示780)"
+      "reason": "11〜20位で表示多(16.7位・表示828)"
     },
     {
       "rank": 4,
       "slug": "oyo-joho",
-      "reason": "11〜20位で表示多(16.2位・表示806)"
+      "reason": "11〜20位で表示多(16.5位・表示823)"
     },
     {
       "rank": 4,
       "slug": "fp",
-      "reason": "11〜20位で表示多(12.4位・表示201)"
+      "reason": "11〜20位で表示多(12.3位・表示211)"
     },
     {
       "rank": 4,
       "slug": "gyoseishoshi",
-      "reason": "11〜20位で表示多(17.7位・表示507)"
+      "reason": "11〜20位で表示多(17.6位・表示510)"
     },
     {
       "rank": 5,
