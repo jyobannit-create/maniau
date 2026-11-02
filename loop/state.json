@@ -23,6 +23,14 @@
       "impressions": 684,
       "ctr": 0.0015,
       "position": 14.7
+    },
+    {
+      "start": "2026-10-24",
+      "end": "2026-10-30",
+      "clicks": 6,
+      "impressions": 459,
+      "ctr": 0.0131,
+      "position": 10.26
     }
   ],
   "actions": [],
@@ -30,27 +38,37 @@
     {
       "rank": 2,
       "slug": "kihon-joho",
-      "reason": "titleLint: 「試験日」系クエリが計161表示あるが title/description に無い"
+      "reason": "titleLint: 「試験日」系クエリが計177表示あるが title/description に無い"
     },
     {
       "rank": 3,
       "slug": "shikisai",
-      "reason": "CTR機会(5.8位・表示1517・逃し49click/90d)"
+      "reason": "CTR機会(5.8位・表示1563・逃し52click/90d)"
     },
     {
       "rank": 3,
       "slug": "kikenbutsu",
-      "reason": "CTR機会(9.3位・表示1742・逃し37click/90d)"
+      "reason": "CTR機会(9.3位・表示1811・逃し39click/90d)"
     },
     {
       "rank": 3,
       "slug": "fp1",
-      "reason": "CTR機会(9.6位・表示975・逃し19click/90d)"
+      "reason": "CTR機会(9.7位・表示1013・逃し19click/90d)"
+    },
+    {
+      "rank": 4,
+      "slug": "toeic",
+      "reason": "11〜20位で表示多(12.1位・表示1850)"
+    },
+    {
+      "rank": 4,
+      "slug": "g-kentei",
+      "reason": "11〜20位で表示多(10.9位・表示885)"
     },
     {
       "rank": 4,
       "slug": "kangyo",
-      "reason": "11〜20位で表示多(13.1位・表示1351)"
+      "reason": "11〜20位で表示多(13.0位・表示1398)"
     },
     {
       "rank": 4,
@@ -65,22 +83,17 @@
     {
       "rank": 4,
       "slug": "e-shiken",
-      "reason": "11〜20位で表示多(13.0位・表示584)"
+      "reason": "11〜20位で表示多(12.9位・表示597)"
     },
     {
       "rank": 4,
       "slug": "mankan",
-      "reason": "11〜20位で表示多(16.7位・表示828)"
-    },
-    {
-      "rank": 4,
-      "slug": "oyo-joho",
-      "reason": "11〜20位で表示多(16.5位・表示823)"
+      "reason": "11〜20位で表示多(16.7位・表示835)"
     },
     {
       "rank": 4,
       "slug": "fp",
-      "reason": "11〜20位で表示多(12.3位・表示211)"
+      "reason": "11〜20位で表示多(12.4位・表示219)"
     },
     {
       "rank": 4,
