@@ -24,6 +24,6 @@
 - build.mjs の自動 description(cbt型)が、fee が分かっていても「受験料・申込方法・試験会場は公式サイトでご確認ください」と出す。kihon-joho 等で受験料を答えられていない(2026-10-16 ドライランの V5 指摘)
 
 ## 次回への申し送り
-- 2026-11-02: kikenbutsu の M1 を2案試し V5「高」が2回残り破棄(施策0件・観察中0件)。varies 型(個別日付なし)ページは「試験日」クエリに title だけで応えられず、「調べ方」と書くと意図ずれ、「試験日・申込期限」と書くと日付があるように読める。既存descriptionの「東京都は月数回実施」は裏取り未確認(V5中指摘)
-- **要人間判断候補**: varies型ページに主要都道府県の日程を一次情報つきで載せるか(ループ対象外)。または M1+M2 同時改修の可否(kihon-joho と同構造)。V5が2週連続で M1/M2 単独を落としている
-- 次回は kihon-joho/shikisai/kikenbutsu を飛ばし、fp1 / kangyo を候補に(日程が載っている fixed 型が望ましい)
+- 2026-11-09: denko2 の M2 を2案試し V5「高」が2回残り破棄(施策0件・観察中0件)。tbd型の自動title「試験日程は未定」が、日程確定済みの下期技能試験(12/12・13、申込終了)と矛盾し、description側では直せない。seoTitle(M1)で先に直す必要がある(月単位「2026年12月」等、R002との整合は要検討)。seoTitle/seoDescription に年・日付を書くと V3(sessions照合)で落ちる
+- **要人間判断候補**: tbd型の自動title/descriptionテンプレートが、一部日程確定済み(tbdNoteに記載)のページで「未定」と断定する(build.mjs。ループ対象外)。kihon-joho/shikisai/kikenbutsu に続き、M1/M2単独がV5で落ちるページが4件目
+- 次回は denko2 を M1 で再挑戦するか、fp1 / kangyo(日程が載っている fixed 型)を候補に。kihon-joho/shikisai/kikenbutsu は引き続き飛ばす
