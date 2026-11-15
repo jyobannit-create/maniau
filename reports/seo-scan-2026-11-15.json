@@ -1,0 +1,282 @@
+{
+  "date": "2026-11-15",
+  "snapshot": "2026-11-15.json",
+  "partial": false,
+  "totalFindings": 31,
+  "actionable": 15,
+  "hasHighRegression": false,
+  "recentlyChangedPages": [],
+  "findings": {
+    "regressions": [
+      {
+        "page": "https://maniau-shikaku.com/exams/denko2/",
+        "slug": "denko2",
+        "before": 40.2,
+        "after": 57.5,
+        "delta": 17.2,
+        "impressions": 240,
+        "severity": "medium"
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/eisei-kanri/",
+        "slug": "eisei-kanri",
+        "before": 26.1,
+        "after": 39.6,
+        "delta": 13.5,
+        "impressions": 477,
+        "severity": "medium"
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/hoikushi/",
+        "slug": "hoikushi",
+        "before": 19.8,
+        "after": 30.1,
+        "delta": 10.4,
+        "impressions": 237,
+        "severity": "medium"
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/oyo-joho/",
+        "slug": "oyo-joho",
+        "before": 12.7,
+        "after": 19.9,
+        "delta": 7.2,
+        "impressions": 615,
+        "severity": "medium"
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/gyoseishoshi/",
+        "slug": "gyoseishoshi",
+        "before": 13.2,
+        "after": 19.1,
+        "delta": 5.9,
+        "impressions": 381,
+        "severity": "medium"
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/boki/",
+        "slug": "boki",
+        "before": 9.2,
+        "after": 14.2,
+        "delta": 5,
+        "impressions": 101,
+        "severity": "medium"
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/e-shiken/",
+        "slug": "e-shiken",
+        "before": 10.4,
+        "after": 14.7,
+        "delta": 4.3,
+        "impressions": 347,
+        "severity": "medium"
+      }
+    ],
+    "ctrOpportunities": [
+      {
+        "page": "https://maniau-shikaku.com/exams/shikisai/",
+        "slug": "shikisai",
+        "impressions": 1356,
+        "position": 5.5,
+        "ctr": 0.0059,
+        "expectedCtr": 0.04,
+        "lostClicksPer90d": 47
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/kikenbutsu/",
+        "slug": "kikenbutsu",
+        "impressions": 1961,
+        "position": 9.28,
+        "ctr": 0.0005,
+        "expectedCtr": 0.022,
+        "lostClicksPer90d": 43
+      },
+      {
+        "page": "https://maniau-shikaku.com/exams/fp1/",
+        "slug": "fp1",
+        "impressions": 954,
+        "position": 9.95,
+        "ctr": 0.0042,
+        "expectedCtr": 0.021,
+        "lostClicksPer90d": 16
+      }
+    ],
+    "contentGaps": [
+      {
+        "query": "toeic 3月16日",
+        "impressions": 70,
+        "position": 31.27,
+        "matchedExam": "toeic",
+        "note": "既存ページはあるが下位/未対応"
+      },
+      {
+        "query": "行政書士 試験日",
+        "impressions": 52,
+        "position": 29.35,
+        "matchedExam": "gyoseishoshi",
+        "note": "既存ページはあるが下位/未対応"
+      },
+      {
+        "query": "マンション管理士 試験日",
+        "impressions": 49,
+        "position": 35.92,
+        "matchedExam": "mankan",
+        "note": "既存ページはあるが下位/未対応"
+      },
+      {
+        "query": "基本情報処理技術者試験 日程",
+        "impressions": 40,
+        "position": 27.88,
+        "matchedExam": "kihon-joho",
+        "note": "既存ページはあるが下位/未対応"
+      }
+    ],
+    "titleLint": [
+      {
+        "slug": "kihon-joho",
+        "kind": "intent-missing",
+        "severity": "medium",
+        "detail": "「試験日」系クエリが計172表示あるが title/description に無い",
+        "topQuery": "基本情報技術者試験 試験日 いつでも",
+        "impressions": 172,
+        "approx": false
+      }
+    ],
+    "risingQueries": [
+      {
+        "query": "危険物乙4 試験日",
+        "impressions": 1359,
+        "was": 10,
+        "clicks": 0,
+        "position": 9.31
+      },
+      {
+        "query": "管理業務主任者 試験日",
+        "impressions": 146,
+        "was": 27,
+        "clicks": 1,
+        "position": 25.01
+      },
+      {
+        "query": "基本情報技術者試験 試験日 いつでも",
+        "impressions": 112,
+        "was": 0,
+        "clicks": 0,
+        "position": 10.06
+      },
+      {
+        "query": "応用情報技術者試験 試験日",
+        "impressions": 96,
+        "was": 13,
+        "clicks": 0,
+        "position": 44.49
+      },
+      {
+        "query": "乙4 試験日",
+        "impressions": 80,
+        "was": 2,
+        "clicks": 1,
+        "position": 9.86
+      },
+      {
+        "query": "基本情報技術者試験 日程",
+        "impressions": 76,
+        "was": 14,
+        "clicks": 0,
+        "position": 26.66
+      },
+      {
+        "query": "危険物乙4試験日",
+        "impressions": 71,
+        "was": 0,
+        "clicks": 0,
+        "position": 9.59
+      },
+      {
+        "query": "toeic 3月16日",
+        "impressions": 70,
+        "was": 6,
+        "clicks": 0,
+        "position": 31.27
+      },
+      {
+        "query": "行政書士 試験日",
+        "impressions": 52,
+        "was": 4,
+        "clicks": 0,
+        "position": 29.35
+      },
+      {
+        "query": "マンション管理士 試験日",
+        "impressions": 49,
+        "was": 16,
+        "clicks": 0,
+        "position": 35.92
+      },
+      {
+        "query": "基本情報処理技術者試験 日程",
+        "impressions": 40,
+        "was": 9,
+        "clicks": 0,
+        "position": 27.88
+      },
+      {
+        "query": "g検定 試験日",
+        "impressions": 39,
+        "was": 9,
+        "clicks": 0,
+        "position": 15.54
+      },
+      {
+        "query": "管理業務主任者 申し込み",
+        "impressions": 36,
+        "was": 8,
+        "clicks": 0,
+        "position": 6.03
+      },
+      {
+        "query": "マンション管理士 申込期間",
+        "impressions": 34,
+        "was": 6,
+        "clicks": 0,
+        "position": 10.59
+      },
+      {
+        "query": "管理業務主任者試験日",
+        "impressions": 33,
+        "was": 3,
+        "clicks": 0,
+        "position": 22.76
+      },
+      {
+        "query": "行政書士の試験日",
+        "impressions": 32,
+        "was": 9,
+        "clicks": 0,
+        "position": 23.94
+      }
+    ]
+  },
+  "annotations": [
+    {
+      "date": "2026-09-10",
+      "commit": "78da1c5",
+      "pages": [
+        "shikisai",
+        "toeic",
+        "kangyo",
+        "mankan",
+        "e-shiken",
+        "g-kentei",
+        "oyo-joho",
+        "gyoseishoshi",
+        "fp1",
+        "fp",
+        "boki1",
+        "boki",
+        "kikenbutsu"
+      ],
+      "note": "P0-1: title/descriptionを情報一覧型に改修(答え完結型を解消)。P0-2: BreadcrumbList追加。"
+    }
+  ]
+}
