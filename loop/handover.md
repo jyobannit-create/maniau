@@ -24,6 +24,6 @@
 - build.mjs の自動 description(cbt型)が、fee が分かっていても「受験料・申込方法・試験会場は公式サイトでご確認ください」と出す。kihon-joho 等で受験料を答えられていない(2026-10-16 ドライランの V5 指摘)
 
 ## 次回への申し送り
-- 2026-11-09: denko2 の M2 を2案試し V5「高」が2回残り破棄(施策0件・観察中0件)。tbd型の自動title「試験日程は未定」が、日程確定済みの下期技能試験(12/12・13、申込終了)と矛盾し、description側では直せない。seoTitle(M1)で先に直す必要がある(月単位「2026年12月」等、R002との整合は要検討)。seoTitle/seoDescription に年・日付を書くと V3(sessions照合)で落ちる
-- **要人間判断候補**: tbd型の自動title/descriptionテンプレートが、一部日程確定済み(tbdNoteに記載)のページで「未定」と断定する(build.mjs。ループ対象外)。kihon-joho/shikisai/kikenbutsu に続き、M1/M2単独がV5で落ちるページが4件目
-- 次回は denko2 を M1 で再挑戦するか、fp1 / kangyo(日程が載っている fixed 型)を候補に。kihon-joho/shikisai/kikenbutsu は引き続き飛ばす
+- 2026-11-16: denko2 の M1 を2案試し V5「高」が2回残り破棄(施策0件・観察中0件)。高指摘は2回とも build.mjs の自動 description(upcoming 分岐: 「◯月◯日から開始予定です」のみで年・試験日なし)で、M1 では直せない。denko2 は M2 を試す価値あり(ただし年・具体日付は V3 で不可。「上期・下期の申込期間・学科CBT・技能試験の日程を掲載」等の一覧型で)
+- **要人間判断候補**: build.mjs の upcoming 型 自動 description が、fixed 型で申込開始日しか出さず、学科/技能の試験日・年度を出さない(denko2: 「試験日」系クエリ計約34表示に答えられない)。M1/M2単独が V5 で落ちるページがこれで5件目。テンプレート改修は人間判断
+- 次回は fp1 / kangyo / e-shiken / oyo-joho など(日程が載っている fixed 型)を候補に。kihon-joho/shikisai/kikenbutsu は引き続き飛ばす
