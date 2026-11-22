@@ -17,14 +17,38 @@
         { "method": "通常受験申込", "start": "2026-12-07", "end": "2027-01-12" }
       ],
       "applicationNote": "2級・3級はCBT方式でも随時受験可能。申込はインターネットのみで随時受付(申込日から3日目以降の予約が可能)、実施は年末年始を除き随時。CBT受験料: 2級4,900円・3級3,600円(いずれもCBT事務手数料800円込み・税込)"
+    },
+    {
+      "label": "第142回検定(2027年6月実施)",
+      "examDate": "2027-06-20",
+      "applications": [
+        { "method": "通常受験申込", "start": "2027-04-05", "end": "2027-05-17" },
+        { "method": "筆記試験免除受験申込", "start": "2027-03-05", "end": "2027-04-09", "note": "面接試験に不合格・欠席で筆記試験免除(1年間)の対象となる方のみ" }
+      ]
+    },
+    {
+      "label": "第143回検定(2027年11月実施)",
+      "examDate": "2027-11-14",
+      "applications": [
+        { "method": "通常受験申込", "start": "2027-09-03", "end": "2027-10-11" },
+        { "method": "筆記試験免除受験申込", "start": "2027-08-24", "end": "2027-09-13", "note": "面接試験に不合格・欠席で筆記試験免除(1年間)の対象となる方のみ" }
+      ]
+    },
+    {
+      "label": "第144回検定(2028年2月実施・2級/3級のみ)",
+      "examDate": "2028-02-06",
+      "examNote": "第144回は2級・3級のみの実施",
+      "applications": [
+        { "method": "通常受験申込", "start": "2027-12-06", "end": "2028-01-10" }
+      ]
     }
   ],
   "sources": [
-    { "url": "https://jitsumu-ginou-kentei.jp/HS/schedule", "note": "公式(実務技能検定協会 秘書検定 試験日程・第141回を確認)" },
+    { "url": "https://jitsumu-ginou-kentei.jp/HS/schedule", "note": "公式(実務技能検定協会 秘書検定 試験日程・第141〜144回を確認)" },
     { "url": "https://jitsumu-ginou-kentei.jp/HS/acceptance", "note": "公式(実務技能検定協会 秘書検定 申込期間)" },
     { "url": "https://jitsumu-ginou-kentei.jp/HS/guide", "note": "公式(実務技能検定協会 秘書検定 受験要項・検定料)" },
     { "url": "https://jitsumu-ginou-kentei.jp/HS/cbt", "note": "公式(実務技能検定協会 秘書検定CBT案内)" },
     { "url": "https://cbt-s.com/examinee/examination/hisyokentei.html", "note": "CBT-Solutions(秘書検定CBT申込・詳細/公式案内先)" }
   ],
-  "lastVerified": "2026-11-16"
+  "lastVerified": "2026-11-23"
 }
