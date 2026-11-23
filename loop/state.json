@@ -47,89 +47,87 @@
       "impressions": 450,
       "ctr": 0.0022,
       "position": 16.46
+    },
+    {
+      "start": "2026-11-14",
+      "end": "2026-11-20",
+      "clicks": 7,
+      "impressions": 538,
+      "ctr": 0.013,
+      "position": 20.89
     }
   ],
   "actions": [],
   "queue": [
     {
       "rank": 1,
-      "slug": "denko2",
-      "reason": "回帰アラート(42.6→57.5位)"
+      "slug": "boki",
+      "reason": "回帰アラート(9.2→15.1位)"
     },
     {
       "rank": 1,
       "slug": "eisei-kanri",
-      "reason": "回帰アラート(27→39.9位)"
-    },
-    {
-      "rank": 1,
-      "slug": "hoikushi",
-      "reason": "回帰アラート(21.2→30.4位)"
+      "reason": "回帰アラート(30.4→40位)"
     },
     {
       "rank": 1,
       "slug": "oyo-joho",
-      "reason": "回帰アラート(12.9→20.1位)"
+      "reason": "回帰アラート(14.1→22位)"
     },
     {
       "rank": 1,
       "slug": "gyoseishoshi",
-      "reason": "回帰アラート(13.5→19.2位)"
-    },
-    {
-      "rank": 1,
-      "slug": "boki",
-      "reason": "回帰アラート(9.5→14.4位)"
+      "reason": "回帰アラート(13.3→19.8位)"
     },
     {
       "rank": 1,
       "slug": "e-shiken",
-      "reason": "回帰アラート(10.3→15.2位)"
+      "reason": "回帰アラート(10.5→16.3位)"
+    },
+    {
+      "rank": 1,
+      "slug": "fp",
+      "reason": "回帰アラート(11→16.3位)"
+    },
+    {
+      "rank": 1,
+      "slug": "hoikushi",
+      "reason": "回帰アラート(23.6→28.1位)"
     },
     {
       "rank": 2,
       "slug": "kihon-joho",
-      "reason": "titleLint: 「試験日」系クエリが計174表示あるが title/description に無い"
+      "reason": "titleLint: 「試験日」系クエリが計183表示あるが title/description に無い"
     },
     {
-      "rank": 3,
-      "slug": "shikisai",
-      "reason": "CTR機会(5.5位・表示1331・逃し46click/90d)"
+      "rank": 2,
+      "slug": "denko2",
+      "reason": "titleLint: 「試験日」系クエリが計48表示あるが title/description に無い"
     },
     {
       "rank": 3,
       "slug": "kikenbutsu",
-      "reason": "CTR機会(9.3位・表示1961・逃し43click/90d)"
+      "reason": "CTR機会(9.2位・表示1977・逃し45click/90d)"
     },
     {
       "rank": 3,
-      "slug": "fp1",
-      "reason": "CTR機会(10.1位・表示921・逃し15click/90d)"
-    },
-    {
-      "rank": 4,
-      "slug": "toeic",
-      "reason": "11〜20位で表示多(12.9位・表示1651)"
+      "slug": "shikisai",
+      "reason": "CTR機会(5.7位・表示1198・逃し37click/90d)"
     },
     {
       "rank": 4,
       "slug": "g-kentei",
-      "reason": "11〜20位で表示多(11.3位・表示794)"
+      "reason": "11〜20位で表示多(11.4位・表示764)"
     },
     {
       "rank": 4,
       "slug": "kangyo",
-      "reason": "11〜20位で表示多(13.2位・表示1149)"
+      "reason": "11〜20位で表示多(13.3位・表示1028)"
     },
     {
       "rank": 4,
       "slug": "mankan",
-      "reason": "11〜20位で表示多(17.3位・表示614)"
-    },
-    {
-      "rank": 4,
-      "slug": "fp",
-      "reason": "11〜20位で表示多(13.4位・表示180)"
+      "reason": "11〜20位で表示多(18.4位・表示515)"
     }
   ]
 }
